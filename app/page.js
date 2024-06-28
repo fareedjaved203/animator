@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black">
       <Navbar />
-      <div data-aos="fade-up" data-aos-anchor-placement="center-center">
+      <div>
         <Header />
       </div>
     </main>
