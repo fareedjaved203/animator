@@ -4,7 +4,7 @@ import Image from "next/image";
 const LeftHorizontalScroll = () => {
   return (
     <div class="scroll w-full">
-      <div class="m-scroll space-x-4">
+      <div class="m-scroll-left space-x-4">
         <div className="img-slider rounded-full overflow-hidden">
           <Image
             width={150}

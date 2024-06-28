@@ -7,17 +7,16 @@
   overflow: hidden;
 }
 
-.m-scroll {
+.m-scroll-left {
   display: flex;
   width: fit-content;
-  animation: scrollText 20s infinite linear;
+  animation: scrollLeft 20s infinite linear;
 }
 
-span {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  color: white;
+.m-scroll-right {
+  display: flex;
+  width: fit-content;
+  animation: scrollRight 20s infinite linear;
 }
 
 .img-slider {
@@ -27,11 +26,20 @@ span {
   border-radius: 20px;
 }
 
-@keyframes scrollText {
+@keyframes scrollLeft {
   0% {
     transform: translateX(0%);
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
