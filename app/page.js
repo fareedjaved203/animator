@@ -3,6 +3,7 @@ import Header from "@/components/header/Header";
 import Slider from "@/components/content slider/Slider";
 import Thumbnails from "@/components/thumbnails/Thumbnails";
 import Hobbies from "@/components/hobbies/Hobbies";
+import Reviews from "@/components/reviews/Reviews";
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
       </div>
       <div className="mt-40">
         <Hobbies />
+      </div>
+      <div className="mt-40">
+        <Reviews />
       </div>
     </main>
   );
