@@ -1,9 +1,21 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import GridComponent from "./Grid";
 
 const Thumbnails = () => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
-    <div className="container mx-auto px-4 md:px-20 text-white">
+    <div
+      className="container mx-auto px-4 md:px-20 text-white"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="400"
+      data-aos-offset="0"
+    >
       <div className="flex flex-col space-y-6 justify-center items-center">
         <div className="text-3xl md:text-5xl text-center text-[#e2b203]">
           Featured Thumbnails

@@ -10,13 +10,13 @@
 .m-scroll-left {
   display: flex;
   width: fit-content;
-  animation: scrollLeft 20s infinite linear;
+  animation: scrollLeft 30s infinite linear;
 }
 
 .m-scroll-right {
   display: flex;
   width: fit-content;
-  animation: scrollRight 20s infinite linear;
+  animation: scrollRight 30s infinite linear;
 }
 
 .img-slider {

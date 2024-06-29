@@ -1,21 +1,33 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
 import clientReviews from "./reviews.json";
 
 const Reviews = () => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
-    <div className="container mx-auto">
+    <div
+      className="container mx-auto"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="400"
+      data-aos-offset="0"
+    >
       <div className="scroll">
         <div className="flex justify-center items-center text-center w-full text-4xl md:text-5xl text-[#e2b203] mb-20">
           <div className="w-3/4">What Clients have to say</div>
         </div>
-        <div className="m-scroll-left space-x-4 text-white w-full">
+        <div className="m-scroll-right space-x-4 text-white w-full">
           {clientReviews.map((review) => (
             <div
               key={review.id}
-              className="flex flex-col items-start space-x-4 mb-8 p-4 bg-gray-800 rounded-xl min-w-80 md:min-w-[30%] h-auto border border-blue-400 cursor-pointer hover:scale-105 hover:transition-all "
+              className="flex flex-col items-start space-x-4 mb-8 p-4 pl-0 bg-gray-800 rounded-xl min-w-80 md:min-w-[30%] h-auto border border-blue-400 cursor-pointer hover:scale-105 hover:transition-all "
             >
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 pl-4">
                 <div className="flex-1">
                   <Image
                     src={review.image}

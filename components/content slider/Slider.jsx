@@ -1,9 +1,21 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
 
 const Slider = () => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
-    <div class="container mx-auto scroll w-full">
+    <div
+      class="container mx-auto scroll w-full"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="100"
+      data-aos-offset="0"
+    >
       <div class="m-scroll-left space-x-4">
         <div className="content-slider rounded-full overflow-hidden">
           <Image
