@@ -20,10 +20,18 @@
 }
 
 .img-slider {
+  width: 250px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.content-slider {
   width: 200px;
   height: 120px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 5px;
+  border: 2px solid lightskyblue;
 }
 
 @keyframes scrollLeft {

@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className="container mx-auto relative">
       <div data-aos="zoom-in" data-aos-duration="1500">
-        <div className="opacity-20 w-full flex justify-start items-center flex-col space-y-4">
+        <div className="opacity-20 w-full flex justify-start items-center flex-col space-y-2">
           <LeftHorizontalScroll />
           <RightHorizontalScroll />
           <LeftHorizontalScroll />
