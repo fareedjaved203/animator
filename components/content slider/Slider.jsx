@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Slider = () => {
   return (
-    <div class="scroll w-full">
+    <div class="container mx-auto scroll w-full">
       <div class="m-scroll-left space-x-4">
         <div className="content-slider rounded-full overflow-hidden">
           <Image

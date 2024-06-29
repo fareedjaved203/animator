@@ -8,13 +8,13 @@ const Thumbnails = () => {
         <div className="text-3xl md:text-5xl text-center text-[#e2b203]">
           Featured Thumbnails
         </div>
-        <div className="w-1/2 text-center">
+        <div className="md:w-1/2 text-center">
           I take pride in combining design and strategy that exceeds your
           expectations.
         </div>
         <div>Explore my featured thumbnails below!</div>
       </div>
-      <div className="mt-20">
+      <div className="mt-10 md:mt-20">
         <GridComponent />
       </div>
     </div>
