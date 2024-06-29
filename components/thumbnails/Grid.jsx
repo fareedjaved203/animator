@@ -27,7 +27,10 @@ const GridComponent = () => {
     <div className="container mx-auto">
       <div className="flex flex-wrap -mx-4">
         {divsData.map((item) => (
-          <div key={item.id} className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
+          <div
+            key={item.id}
+            className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 cursor-pointer hover:scale-105 hover:transition-all"
+          >
             <div className="bg-gray-200 w-full rounded-xl overflow-hidden shadow-lg flex justify-center items-center">
               <Image
                 src={item.image}
