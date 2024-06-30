@@ -11,7 +11,6 @@ const Reviews = () => {
   }, []);
   return (
     <div
-      className="container mx-auto"
       data-aos="fade-zoom-in"
       data-aos-easing="ease-in-back"
       data-aos-delay="400"
@@ -25,7 +24,7 @@ const Reviews = () => {
           {clientReviews.map((review) => (
             <div
               key={review.id}
-              className="flex flex-col items-start space-x-4 mb-8 p-4 pl-0 bg-gray-800 rounded-xl min-w-80 md:min-w-[30%] h-auto border border-blue-400 cursor-pointer hover:scale-105 hover:transition-all "
+              className="flex flex-col items-start space-x-4 mb-8 p-4 pl-0 bg-gray-800 rounded-xl min-w-80 md:min-w-[30%] 2xl:min-w-[20%] h-auto border border-blue-400 cursor-pointer hover:scale-105 hover:transition-all "
             >
               <div className="flex space-x-4 pl-4">
                 <div className="flex-1">

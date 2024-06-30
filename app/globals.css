@@ -27,11 +27,9 @@
 }
 
 .content-slider {
-  width: 200px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 5px;
-  border: 2px solid lightskyblue;
 }
 
 @keyframes scrollLeft {

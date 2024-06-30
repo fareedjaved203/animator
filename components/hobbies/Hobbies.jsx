@@ -10,7 +10,7 @@ const Hobbies = () => {
   }, []);
   return (
     <div
-      className="container mx-auto px-4 md:px-20"
+      className="container mx-auto px-4 xl:px-28 2xl:px-40"
       data-aos="fade-zoom-in"
       data-aos-easing="ease-in-back"
       data-aos-delay="400"
