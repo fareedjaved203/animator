@@ -13,7 +13,7 @@ const Reviews = () => {
     <div
       data-aos="fade-zoom-in"
       data-aos-easing="ease-in-back"
-      data-aos-delay="400"
+      data-aos-delay="100"
       data-aos-offset="0"
     >
       <div className="scroll">

@@ -13,7 +13,7 @@ const Thumbnails = () => {
       className="container mx-auto px-4 md:px-20 text-white"
       data-aos="fade-zoom-in"
       data-aos-easing="ease-in-back"
-      data-aos-delay="400"
+      data-aos-delay="100"
       data-aos-offset="0"
     >
       <div className="flex flex-col space-y-6 justify-center items-center">
