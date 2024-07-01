@@ -25,7 +25,7 @@ const Slider = () => {
               height={150}
               layout="responsive"
               alt="image"
-              className="rounded-full aspect-square object-cover cursor-pointer border border-3 border-blue-400"
+              className="rounded-full aspect-square object-cover cursor-pointer border border-2 border-blue-400"
               src={item?.image}
             />
           </div>
