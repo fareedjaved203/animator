@@ -10,7 +10,7 @@ const Hobbies = () => {
   }, []);
   return (
     <div
-      className="container mx-auto px-4 xl:px-28 2xl:px-40"
+      className="container mx-auto px-4 xl:px-40 2xl:px-64"
       data-aos="fade-zoom-in"
       data-aos-easing="ease-in-back"
       data-aos-delay="100"
@@ -18,7 +18,7 @@ const Hobbies = () => {
     >
       <div className="flex justify-center items-center md:flex-row flex-col flex-col-reverse text-white md:px-32">
         <div className="space-y-6 flex-1 px-4 md:px-0 mt-4 md:mt-0">
-          <div className="text-[#e2b203] text-3xl md:text-5xl">
+          <div className="text-[#e2b203] text-3xl md:text-4xl">
             Welcome, I&#8217;m glad you&#8217;re here!
           </div>
           <div>
@@ -35,8 +35,8 @@ const Hobbies = () => {
             src={
               "https://tvline.com/wp-content/uploads/2024/03/mrbeast-amazon-prime.jpg?w=600&h=400&crop=1"
             }
-            width={250}
-            height={250}
+            width={220}
+            height={220}
             alt="me"
             className="rounded-full aspect-square object-cover cursor-pointer hover:scale-105 hover:transition-all p-1 border border-2 border-[#e2b203]"
           />
@@ -45,7 +45,7 @@ const Hobbies = () => {
 
       <div className="mt-16 flex justify-center items-center md:flex-row md:flex-row-reverse flex-col flex-col-reverse text-white md:px-32">
         <div className="space-y-6 flex-1 px-4 md:px-0 mt-4 md:mt-0 ">
-          <div className="text-[#e2b203] text-3xl md:text-5xl">
+          <div className="text-[#e2b203] text-3xl md:text-4xl">
             I love what I do!
           </div>
           <div>
@@ -61,8 +61,8 @@ const Hobbies = () => {
             src={
               "https://d3so17pif08pib.cloudfront.net/Pictures/480xany/6/4/3/28643_mr_beast2_17650.jpg"
             }
-            width={250}
-            height={250}
+            width={220}
+            height={220}
             alt="me"
             className="rounded-full aspect-square object-cover cursor-pointer hover:scale-105 hover:transition-all p-1 border border-2 border-[#e2b203]"
           />

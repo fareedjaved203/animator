@@ -3,20 +3,20 @@ import thumbnails from "./thumbnails.json";
 
 const GridComponent = () => {
   return (
-    <div className="container mx-auto">
-      <div className="flex flex-wrap">
+    <div className="container mx-auto flex justify-center items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:w-3/4 xl:2/3">
         {thumbnails.map((item) => (
           <div
             key={item.id}
-            className="w-full sm:w-1/2 lg:w-1/3 p-4 cursor-pointer hover:scale-105 hover:transition-all hover:duration-300 duration-300"
+            className="rounded-xl m-2 overflow-hidden cursor-pointer hover:scale-105 hover:transition-all hover:duration-300 duration-300"
           >
-            <div className="w-full rounded-xl overflow-hidden shadow-lg flex justify-center items-center">
+            <div className="w-full rounded-[20px] border border-blue-400 overflow-hidden shadow-lg flex justify-center items-center">
               <Image
                 src={item.image}
-                width={400}
-                height={400}
+                width={360}
+                height={360}
                 alt="image"
-                className="cover rounded-xl border border-3 border-blue-400"
+                className="cover rounded-[20px] border-3 border-blue-400"
               />
             </div>
           </div>
