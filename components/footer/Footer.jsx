@@ -5,13 +5,13 @@ const Footer = () => {
   return (
     <>
       <header
-        class="container mx-auto px-4 pb-12 md:px-20 text-white font-inter bg-black"
+        class="container mx-auto px-4 pb-12 text-white font-inter flex justify-center items-center"
         style={{ fontSize: "13px", fontWeight: "500" }}
       >
-        <div class="flex flex-nowrap flex-col md:flex-row items-center space-y-6 md:space-y-0">
+        <div class="flex flex-nowrap flex-col md:w-2/3 justify-center md:flex-row items-center space-y-6 md:space-y-0">
           <Image src={"/menuIcon.svg"} width={30} height={30} alt="menu-icon" />
           <nav
-            class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center hover:cursor-pointer "
+            class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center hover:cursor-pointer"
             style={{ fontSize: "13px", fontWeight: "500" }}
           >
             <a class="mr-5 hover:underline ">Home</a>

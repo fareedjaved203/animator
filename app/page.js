@@ -7,11 +7,14 @@ import Reviews from "@/components/reviews/Reviews";
 import FAQs from "@/components/FAQs/FAQs";
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/footer/Footer";
+import Achievements from "@/components/achievements/Achievements";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
-      <Navbar />
+    <main className="min-h-screen bg-[#041014]">
+      <div className="sticky top-0 z-10">
+        <Navbar />
+      </div>
       <div>
         <Header />
       </div>
@@ -26,6 +29,9 @@ export default function Home() {
       </div>
       <div className="mt-40">
         <Reviews />
+      </div>
+      <div className="mt-40">
+        <Achievements />
       </div>
       <div className="mt-40">
         <FAQs />

@@ -6,10 +6,10 @@ const Navbar = () => {
   return (
     <>
       <header
-        class="container mx-auto px-4 py-5 md:px-20 hidden md:block text-white font-inter bg-black"
+        class="hidden md:block text-white font-inter bg-black bg-opacity-80"
         style={{ fontSize: "13px", fontWeight: "500" }}
       >
-        <div class="flex flex-nowrap flex-col md:flex-row items-center">
+        <div class="container mx-auto px-4 py-5 w-2/3 justify-center flex flex-nowrap flex-col md:flex-row items-center">
           <Image src={"/menuIcon.svg"} width={30} height={30} alt="menu-icon" />
           <nav
             class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center hover:cursor-pointer "
