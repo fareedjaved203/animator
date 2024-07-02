@@ -11,10 +11,8 @@ const Hobbies = () => {
   return (
     <div
       className="container mx-auto px-4 xl:px-40 2xl:px-64"
-      data-aos="fade-zoom-in"
-      data-aos-easing="ease-in-back"
-      data-aos-delay="100"
-      data-aos-offset="0"
+      data-aos="fade-up"
+      data-aos-duration="2000"
     >
       <div className="flex justify-center items-center md:flex-row flex-col flex-col-reverse text-white md:px-32">
         <div className="space-y-6 flex-1 px-4 md:px-0 mt-4 md:mt-0">

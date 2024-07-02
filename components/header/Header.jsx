@@ -4,6 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import LeftHorizontalScroll from "./LeftHorizontalScroll";
 import RightHorizontalScroll from "./RightHorizontalScroll";
+import LeftTwo from "./LeftTwo";
+import RightTwo from "./RightTwo";
 
 const Header = () => {
   useEffect(() => {
@@ -11,12 +13,16 @@ const Header = () => {
   }, []);
   return (
     <div className="relative">
-      <div data-aos="zoom-in" data-aos-duration="1500">
-        <div className="opacity-20 w-full flex justify-start items-center flex-col space-y-2">
+      <div
+        className="flex flex-col"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
+        <div className="opacity-20">
           <LeftHorizontalScroll />
           <RightHorizontalScroll />
-          <LeftHorizontalScroll />
-          <RightHorizontalScroll />
+          <LeftTwo />
+          <RightTwo />
         </div>
       </div>
       <div class="absolute top-36 w-full text-center animate-fade-in animation-delay-1000">

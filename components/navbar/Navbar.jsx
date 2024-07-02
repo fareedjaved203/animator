@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import HamburgerMenu from "./HamburgerMenu";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -15,15 +16,30 @@ const Navbar = () => {
             class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center hover:cursor-pointer "
             style={{ fontSize: "13px", fontWeight: "500" }}
           >
-            <a class="mr-5 hover:underline ">Home</a>
-            <a class="mr-5 hover:underline">My Work</a>
-            <a class="mr-5 hover:underline">Featured</a>
-            <a class="mr-5 hover:underline flex justify-center items-center space-x-1">
+            <Link href="#home" class="mr-5 hover:underline ">
+              Home
+            </Link>
+            <Link href="#work" class="mr-5 hover:underline">
+              My Work
+            </Link>
+            <Link href="#feature" class="mr-5 hover:underline">
+              Featured
+            </Link>
+            <Link
+              href="#about"
+              class="mr-5 hover:underline flex justify-center items-center space-x-1"
+            >
               About Me
-            </a>
-            <a class="mr-5 hover:underline">Testimonials</a>
-            <a class="mr-5 hover:underline">Results</a>
-            <a class="mr-5 hover:underline">FAQs</a>
+            </Link>
+            <Link href="#testimonials" class="mr-5 hover:underline">
+              Testimonials
+            </Link>
+            <Link href="#results" class="mr-5 hover:underline">
+              Results
+            </Link>
+            <Link href="#faqs" class="mr-5 hover:underline">
+              FAQs
+            </Link>
           </nav>
           <button className="bg-blue-600 text-[#D9D9D9] text-center rounded-full px-10 py-3 text-nowrap">
             Contact Me

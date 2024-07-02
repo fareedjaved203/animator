@@ -18,22 +18,23 @@ export default function Home() {
       <div>
         <Header />
       </div>
-      <div className="mt-40">
+      <div id="work" className="mt-40">
         <Slider />
       </div>
-      <div className="mt-40">
+
+      <div id="feature" className="mt-40">
         <Thumbnails />
       </div>
-      <div className="mt-40">
+      <div id="about" className="mt-40">
         <Hobbies />
       </div>
-      <div className="mt-40">
+      <div id="testimonials" className="mt-40">
         <Reviews />
       </div>
-      <div className="mt-40">
+      <div id="results" className="mt-40">
         <Achievements />
       </div>
-      <div className="mt-40">
+      <div id="faqs" className="mt-40">
         <FAQs />
       </div>
       <div className="mt-40">

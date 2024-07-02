@@ -2,14 +2,14 @@
 
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import slider from "./slider.json";
-import "./test.css";
+import slider from "./data.json";
+import "./righttwo.css";
 
-const Slider = () => {
+const RightTwo = () => {
   const scrollersRef = useRef([]);
 
   useEffect(() => {
-    const scrollers = document.querySelectorAll(".scroller-slider");
+    const scrollers = document.querySelectorAll(".scroller-right-two");
     scrollersRef.current = Array.from(scrollers);
 
     // If a user hasn't opted in for reduced motion, then we add the animation
@@ -23,7 +23,9 @@ const Slider = () => {
         scroller.setAttribute("data-animated", true);
 
         // Make an array from the elements within `.scroller-inner`
-        const scrollerInner = scroller.querySelector(".scroller__inner-slider");
+        const scrollerInner = scroller.querySelector(
+          ".scroller__inner-right-two"
+        );
         const scrollerContent = Array.from(scrollerInner.children);
 
         // For each item in the array, clone it
@@ -41,18 +43,18 @@ const Slider = () => {
   return (
     <div>
       <div
-        className="scroller-slider w-full"
-        data-direction="left"
+        className="scroller-right-two w-full"
+        data-direction="right"
         data-speed="slow"
       >
-        <div className="scroller__inner-slider">
+        <div className="scroller__inner-right-two">
           {slider?.map((item) => (
             <div key={item?.id}>
               <Image
-                width={150}
+                width={250}
                 height={150}
                 alt="image"
-                className="rounded-full aspect-square object-cover cursor-pointer border border-2 border-blue-400"
+                className="rounded-xl aspect-video object-cover cursor-pointer border border-2 border-blue-400"
                 src={item?.image}
               />
             </div>
@@ -63,4 +65,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default RightTwo;

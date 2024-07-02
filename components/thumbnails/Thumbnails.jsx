@@ -11,10 +11,8 @@ const Thumbnails = () => {
   return (
     <div
       className="container mx-auto px-4 md:px-20 text-white"
-      data-aos="fade-zoom-in"
-      data-aos-easing="ease-in-back"
-      data-aos-delay="100"
-      data-aos-offset="0"
+      data-aos="fade-up"
+      data-aos-duration="2000"
     >
       <div className="flex flex-col space-y-6 justify-center items-center">
         <div className="text-3xl md:text-5xl text-center text-[#e2b203]">
