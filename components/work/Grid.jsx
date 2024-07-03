@@ -4,7 +4,7 @@ import work from "./work.json";
 const GridComponent = () => {
   return (
     <div className="flex justify-center items-center">
-      <div className="grid grid-cols-1 md:grid-cols-3 md:w-[65%] xl:2/3">
+      <div className="grid grid-cols-2 md:grid-cols-3 md:w-[65%] xl:2/3">
         {work.map((item) => (
           <div
             key={item.id}
@@ -20,11 +20,11 @@ const GridComponent = () => {
               />
             </div>
             <div className="space-y-1 text-white text-center">
-              <div className="text-[#e2b203] text-2xl text-semibold">
+              <div className="text-[#e2b203] text-md md:text-2xl text-semibold">
                 {item.title}
               </div>
-              <div>{item.name}</div>
-              <div>{item.views}</div>
+              <div className="text-sm md:text-lg">{item.name}</div>
+              <div className="text-sm md:text-lg">{item.views}</div>
             </div>
           </div>
         ))}

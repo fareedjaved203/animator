@@ -4,7 +4,7 @@ import thumbnails from "./thumbnails.json";
 const GridComponent = () => {
   return (
     <div className="container mx-auto flex justify-center items-center">
-      <div className="grid grid-cols-1 md:grid-cols-3 md:w-[65%] xl:2/3">
+      <div className="grid grid-cols-2 md:grid-cols-3 md:w-[65%] xl:2/3">
         {thumbnails.map((item) => (
           <div
             key={item.id}
