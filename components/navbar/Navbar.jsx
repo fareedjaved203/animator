@@ -16,7 +16,7 @@ const Navbar = () => {
             class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center hover:cursor-pointer "
             style={{ fontSize: "13px", fontWeight: "500" }}
           >
-            <Link href="/#home" class="mr-5 hover:underline ">
+            <Link href="/" class="mr-5 hover:underline ">
               Home
             </Link>
             <Link href="/work" class="mr-5 hover:underline">
