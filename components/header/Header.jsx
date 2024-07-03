@@ -6,6 +6,7 @@ import LeftHorizontalScroll from "./LeftHorizontalScroll";
 import RightHorizontalScroll from "./RightHorizontalScroll";
 import LeftTwo from "./LeftTwo";
 import RightTwo from "./RightTwo";
+import ContactBtn from "./ContactBtn";
 
 const Header = () => {
   useEffect(() => {
@@ -25,20 +26,7 @@ const Header = () => {
           <RightTwo />
         </div>
       </div>
-      <div class="absolute top-36 w-full text-center animate-fade-in animation-delay-1000">
-        <div class="text-7xl text-[#e2b203]">
-          Creating for
-          <div>Creators.</div>
-        </div>
-        <div class="flex space-x-4 justify-center items-center mt-4">
-          <button class="bg-blue-600 text-[#D9D9D9] text-center rounded-full px-10 py-3 text-nowrap">
-            My Work
-          </button>
-          <button class="bg-blue-600 text-[#D9D9D9] text-center rounded-full px-10 py-3 text-nowrap">
-            Contact Me
-          </button>
-        </div>
-      </div>
+      <ContactBtn />
     </div>
   );
 };

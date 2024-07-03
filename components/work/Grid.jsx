@@ -1,14 +1,14 @@
 import Image from "next/image";
-import thumbnails from "./thumbnails.json";
+import work from "./work.json";
 
 const GridComponent = () => {
   return (
-    <div className="container mx-auto flex justify-center items-center">
+    <div className="flex justify-center items-center">
       <div className="grid grid-cols-1 md:grid-cols-3 md:w-[65%] xl:2/3">
-        {thumbnails.map((item) => (
+        {work.map((item) => (
           <div
             key={item.id}
-            className="rounded-xl m-2 overflow-hidden cursor-pointer hover:scale-105 hover:transition-all hover:duration-300 duration-300"
+            className="space-y-5 rounded-xl m-2 mt-8 overflow-hidden cursor-pointer hover:scale-105 hover:transition-all hover:duration-300 duration-300"
           >
             <div className="w-full rounded-[20px] border border-blue-400 overflow-hidden shadow-lg flex justify-center items-center">
               <Image
@@ -18,6 +18,13 @@ const GridComponent = () => {
                 alt="image"
                 className="cover rounded-[20px] border-3 border-blue-400"
               />
+            </div>
+            <div className="space-y-1 text-white text-center">
+              <div className="text-[#e2b203] text-2xl text-semibold">
+                {item.title}
+              </div>
+              <div>{item.name}</div>
+              <div>{item.views}</div>
             </div>
           </div>
         ))}

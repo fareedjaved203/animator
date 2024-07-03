@@ -21,7 +21,6 @@ export default function Home() {
       <div id="work" className="mt-40">
         <Slider />
       </div>
-
       <div id="feature" className="mt-40">
         <Thumbnails />
       </div>
@@ -37,7 +36,7 @@ export default function Home() {
       <div id="faqs" className="mt-40">
         <FAQs />
       </div>
-      <div className="mt-40">
+      <div id="contact" className="mt-40">
         <Contact />
       </div>
       <div className="mt-40">
