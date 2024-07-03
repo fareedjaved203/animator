@@ -29,8 +29,8 @@ const ContactBtn = () => {
             <div>Happens</div>
           </div>
           <div class=" flex space-x-4 justify-center items-center mt-4 text-white w-full 2xl:w-[20%] md:w-[37%]">
-            Welcome to the heart of my creative journey. Below, you'll find a
-            selection of my recent projects and works of art that represent my
+            Welcome to the heart of my creative journey. Below, you&#39;ll find
+            a selection of my recent projects and works of art that represent my
             passion, dedication, and commitment to excellence. Each piece is a
             testament to the unique vision and creativity that define my craft.
           </div>
