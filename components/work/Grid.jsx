@@ -20,11 +20,11 @@ const GridComponent = () => {
               />
             </div>
             <div className="space-y-1 text-white text-center">
-              <div className="text-[#e2b203] text-md md:text-2xl text-semibold">
+              <div className="text-[#e2b203] text-md md:text-xl font-semibold">
                 {item.title}
               </div>
-              <div className="text-sm md:text-lg">{item.name}</div>
-              <div className="text-sm md:text-lg">{item.views}</div>
+              <div className="text-sm md:text-md">{item.name}</div>
+              <div className="text-sm md:text-md">{item.views}</div>
             </div>
           </div>
         ))}

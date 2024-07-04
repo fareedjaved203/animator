@@ -15,14 +15,14 @@ const Thumbnails = () => {
       data-aos-duration="2000"
     >
       <div className="flex flex-col space-y-6 justify-center items-center">
-        <div className="text-3xl md:text-5xl text-center text-[#e2b203]">
+        <div className="text-3xl md:text-4xl text-center text-[#e2b203] font-semibold">
           Featured Thumbnails
         </div>
-        <div className="md:w-1/2 text-center">
+        <div className="md:w-1/3 text-center text-sm">
           I take pride in combining design and strategy that exceeds your
           expectations.
         </div>
-        <div>Explore my featured thumbnails below!</div>
+        <div className="text-sm">Explore my featured thumbnails below!</div>
       </div>
       <div className="mt-10 md:mt-20">
         <GridComponent />

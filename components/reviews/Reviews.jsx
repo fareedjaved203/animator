@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
@@ -7,6 +7,7 @@ import clientReviews from "./reviews.json";
 import "./reviews.css";
 
 const Reviews = () => {
+  const [toggle, setToggle] = useState(false);
   useEffect(() => {
     AOS.init({});
   }, []);
@@ -47,20 +48,20 @@ const Reviews = () => {
 
   return (
     <div data-aos="fade-up" data-aos-duration="2000">
-      <div className="flex justify-center items-center text-center w-full text-4xl md:text-5xl text-[#e2b203] mb-20">
+      <div className="flex justify-center items-center text-center w-full text-4xl font-semibold text-[#e2b203] mb-20">
         <div className="w-3/4">What Clients have to say</div>
       </div>
 
       <div
-        className="scroller-right-two text-white"
+        className="scroller-reviews text-white"
         data-direction="right"
         data-speed="slow"
       >
-        <div className="scroller__inner-right-two p-2">
+        <div className="scroller__inner-reviews p-2">
           {clientReviews.map((review) => (
             <div
               key={review.id}
-              className="w-80 space-x-4 mb-8 p-4 pl-0 bg-gray-800 rounded-xl h-56 border border-blue-400 cursor-pointer hover:scale-105 hover:transition-all hover:duration-300 duration-300"
+              className={`overflow-auto w-80 space-x-4 mb-8 p-4 pl-0 bg-gray-800 rounded-xl h-56 border border-blue-400 cursor-pointer`}
             >
               <div className="flex space-x-4 pl-4">
                 <div className="flex-1">
@@ -73,13 +74,23 @@ const Reviews = () => {
                   />
                 </div>
                 <div className="flex-grow">
-                  <div className="text-lg font-semibold">{review.name}</div>
-                  <span className="mt-1 text-md text-blue-300 font-semibold">
+                  <div className="text-md font-semibold">{review.name}</div>
+                  <span className="mt-1 text-sm text-blue-300 font-semibold">
                     {review.role}
                   </span>{" "}
                 </div>
               </div>
-              <div className="text-sm mt-2 line-clamp-4">{review.review}</div>
+              <div className="text-xs mt-2">{review.review}</div>
+              {/* {review?.review?.length > 265 && (
+                <>
+                  <div
+                    className="text-xs underline text-white text-end"
+                    onClick={() => window.alert("hello")}
+                  >
+                    See more
+                  </div>
+                </>
+              )} */}
             </div>
           ))}
         </div>

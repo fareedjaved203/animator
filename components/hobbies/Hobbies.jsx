@@ -16,10 +16,13 @@ const Hobbies = () => {
     >
       <div className="flex justify-center items-center md:flex-row flex-col flex-col-reverse text-white md:px-32">
         <div className="space-y-6 flex-1 px-4 md:px-0 mt-4 md:mt-0">
-          <div className="text-[#e2b203] text-3xl md:text-4xl">
+          <div
+            className="text-[#e2b203] text-3xl text-3xl"
+            style={{ fontWeight: "500" }}
+          >
             Welcome, I&#8217;m glad you&#8217;re here!
           </div>
-          <div>
+          <div className="text-sm">
             Hey, I&#8217;m Dill! I&#39;m a 20-year-old YouTube Thumbnail
             Designer and Strategist with over 7 years of experience in this
             dynamic industry. I&#8217;ve had the opportunity to work with some
@@ -43,10 +46,13 @@ const Hobbies = () => {
 
       <div className="mt-16 flex justify-center items-center md:flex-row md:flex-row-reverse flex-col flex-col-reverse text-white md:px-32">
         <div className="space-y-6 flex-1 px-4 md:px-0 mt-4 md:mt-0 ">
-          <div className="text-[#e2b203] text-3xl md:text-4xl">
+          <div
+            className="text-[#e2b203] text-3xl"
+            style={{ fontWeight: "500" }}
+          >
             I love what I do!
           </div>
-          <div>
+          <div className="text-sm">
             My passion lies in helping creators shine on YouTube by creating
             eye-catching, click-worthy thumbnails. Trust in my expertise, and
             together, we&#39;ll elevate your content and make your channel a

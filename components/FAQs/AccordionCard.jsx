@@ -62,7 +62,7 @@ const AccordionItem = ({ question, answer, id, expanded, toggleAccordion }) => {
         aria-expanded={expanded}
         aria-controls={id}
       >
-        <span className="text-[#e2b203]">{question}</span>
+        <span className="text-[#e2b203] text-sm">{question}</span>
         <svg
           className={`mt-1.5 bg-blue-700 rounded-full md:mt-0 flex-shrink-0 transform h-6 w-6 ${
             expanded ? "rotate-180" : ""
@@ -96,7 +96,7 @@ const AccordionItem = ({ question, answer, id, expanded, toggleAccordion }) => {
         </svg>
       </button>
       <div
-        className={`transition-all duration-300 answer pt-2 pb-5 px-5 text-sm lg:text-base text-white font-medium ${
+        className={`transition-all duration-300 answer pt-2 pb-5 px-5 text-sm text-white font-medium ${
           expanded ? "block" : "hidden"
         }`}
         id={id}

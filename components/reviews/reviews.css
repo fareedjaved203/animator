@@ -31,8 +31,27 @@
   --_animation-duration: 60s;
 }
 
+.scroller-reviews[data-animated="true"] .scroller__inner-reviews:hover {
+  animation-play-state: paused;
+}
+
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 0.5rem));
   }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Handle (thumb of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the thumb */
+  border-radius: 20px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color when hovered */
 }
