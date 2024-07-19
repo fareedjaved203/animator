@@ -15,7 +15,7 @@ const Thumbnails = () => {
       data-aos-duration="2000"
     >
       <div className="flex justify-center items-center">
-        <div class="grid grid-cols-2 md:grid-cols-3 md:w-2/3 xl:2/3 space-x-16 px-4 space-y-2 md:space-y-0">
+        <div class="grid grid-cols-2 md:grid-cols-3 md:w-2/3 xl:2/3 md:space-x-16 px-4 space-y-2 md:space-y-0">
           <div
             class="text-3xl md:text-4.5xl text-[#FFDC23]"
             style={{ fontWeight: "900" }}
