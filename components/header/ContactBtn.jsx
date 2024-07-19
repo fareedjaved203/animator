@@ -8,17 +8,14 @@ const ContactBtn = () => {
   return (
     <>
       {pathname == "/" ? (
-        <div class="w-full text-center animate-fade-in animation-delay-1000">
+        <div class="w-full text-center animate-fade-in animation-delay-1000 space-y-3">
           <div className="flex space-x-3 text-[#FFDC23] justify-center items-center">
             <Image src={"/tick.svg"} width={30} height={30} alt="tick" />
             <div>Over 200+ Satisfied Clients</div>
           </div>
-          <div
-            class="text-4xl md:text-6xl text-white font-semibold flex justify-center items-center flex-col"
-            style={{ fontSize: "58px" }}
-          >
+          <div class="text-4xl md:text-6xl text-white font-semibold flex justify-center items-center flex-col">
             Create Your
-            <div className="flex flex-nowrap space-x-4">
+            <div className="flex flex-nowrap space-x-2 md:space-x-4">
               {" "}
               <div className="text-[#FFDC23]">
                 Thumbnail
@@ -27,7 +24,7 @@ const ContactBtn = () => {
                   width={270}
                   height={10}
                   alt="curve"
-                  className="ml-6"
+                  className="ml-6 w-40 h-10 md:w-72"
                 />
               </div>{" "}
               <div>Now.</div>

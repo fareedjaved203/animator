@@ -15,7 +15,7 @@ const Thumbnails = () => {
       data-aos-duration="2000"
     >
       <div className="flex justify-center items-center">
-        <div class="grid grid-cols-2 md:grid-cols-3 md:w-2/3 xl:2/3 space-x-4 px-4">
+        <div class="grid grid-cols-2 md:grid-cols-3 md:w-2/3 xl:2/3 md:space-x-4 px-4 space-y-2 md:space-y-0">
           <div class="text-3xl md:text-4xl text-[#FFDC23] font-semibold">
             Featured <div className="text-white">Thumbnails</div>
           </div>
