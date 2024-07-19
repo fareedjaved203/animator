@@ -35,16 +35,16 @@ const ContactBtn = () => {
           </div>
         </div>
       ) : (
-        <div class="flex justify-center items-center flex-col absolute top-36 w-full text-center animate-fade-in animation-delay-1000">
-          <div class="text-6xl text-[#e2b203] font-semibold">
-            Where the Magic
-            <div>Happens</div>
-          </div>
-          <div class=" flex space-x-4 justify-center items-center mt-4 text-white w-full 2xl:w-[20%] md:w-[37%]">
-            Welcome to the heart of my creative journey. Below, you&#39;ll find
-            a selection of my recent projects and works of art that represent my
-            passion, dedication, and commitment to excellence. Each piece is a
-            testament to the unique vision and creativity that define my craft.
+        <div class="flex justify-center items-center flex-col w-full text-center animate-fade-in animation-delay-1000">
+          <div class="text-6xl text-white font-semibold">
+            My <span className="text-[#FFDC23]">Work</span>
+            <Image
+              src={"curve.svg"}
+              width={270}
+              height={10}
+              alt="curve"
+              className="ml-6"
+            />
           </div>
         </div>
       )}

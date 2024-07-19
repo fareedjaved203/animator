@@ -16,7 +16,8 @@ const HamburgerMenu = () => {
   return (
     <header className="block md:hidden px-4 py-2 bg-black">
       <div class="flex flex-row justify-between items-center">
-        <Image src={"/menuIcon.svg"} width={30} height={30} alt="menu-icon" />
+        <div className="text-[#FFDC23] text-2xl">Musa.</div>
+
         <button
           onClick={toggleSidebar}
           className="md:hidden text-[#e2b203] hover:text-blue focus:outline-none focus:text-black"

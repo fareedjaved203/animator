@@ -6,20 +6,17 @@ import { Work } from "@/components/work/Work";
 
 export default function WorkPage() {
   return (
-    <main className="min-h-screen bg-[#041014]">
+    <main className="min-h-screen bg-black">
       <div className="sticky top-0 z-10">
         <Navbar />
       </div>
-      <div>
+      <div className="mt-16">
         <Header />
       </div>
-      <div id="work" className="mt-40">
+      <div id="work" className="mt-10">
         <Work />
       </div>
-      <div className="mt-40">
-        <Contact />
-      </div>
-      <div className="mt-40">
+      <div className="mt-24">
         <Footer />
       </div>
     </main>

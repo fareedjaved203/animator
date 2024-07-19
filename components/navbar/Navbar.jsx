@@ -11,7 +11,7 @@ const Navbar = () => {
         style={{ fontSize: "13px", fontWeight: "500" }}
       >
         <div class="container mx-auto px-4 py-5 w-2/3 justify-center flex flex-nowrap flex-col md:flex-row items-center">
-          <div className="text-[#FFDC23]">Musa.</div>
+          <div className="text-[#FFDC23] text-2xl">Musa.</div>
           <nav
             class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center hover:cursor-pointer "
             style={{ fontSize: "13px", fontWeight: "500" }}

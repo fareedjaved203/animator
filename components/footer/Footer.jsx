@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <header
-        class="container mx-auto px-4 pb-12 text-white font-inter flex justify-center items-center"
+        class="container mx-auto pb-12 text-white font-inter flex justify-center items-center"
         style={{ fontSize: "13px", fontWeight: "500" }}
       >
         <div class="flex flex-nowrap flex-col md:w-2/3 justify-center md:flex-row items-center space-y-6 md:space-y-0">
