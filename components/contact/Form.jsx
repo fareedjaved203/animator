@@ -4,18 +4,25 @@ const Form = () => {
   return (
     <div className="md:w-1/4">
       <div className="flex flex-col space-y-4">
-        <input
-          className="text-[#818181] bg-black px-3 py-3 border border-[#FFDC23] rounded-lg focus:outline-none"
-          type="text"
-          placeholder="Name"
-        />
-        <input
-          className="text-[#818181] bg-black px-3 py-3 border border-[#FFDC23] rounded-lg focus:outline-none"
-          type="email"
-          placeholder="Email"
-        />
+        <div className="space-y-2 flex flex-col">
+          <label className="text-[#FFDC23]">Name</label>
+          <input
+            className="text-[#818181] bg-black px-3 py-3 border border-[#FFDC23] rounded-lg focus:outline-none"
+            type="text"
+            placeholder="Name"
+          />
+        </div>
+        <div className="space-y-2 flex flex-col">
+          <label className="text-[#FFDC23]">Email</label>
+          <input
+            className="text-[#818181] bg-black px-3 py-3 border border-[#FFDC23] rounded-lg focus:outline-none"
+            type="email"
+            placeholder="Email"
+          />
+        </div>
       </div>
-      <div className="mt-4">
+      <div className="mt-4 space-y-2">
+        <label className="text-[#FFDC23]">Message</label>
         <textarea
           className="w-full text-[#818181] bg-black px-3 py-2 border border-[#FFDC23] rounded-lg focus:outline-none"
           rows="5"

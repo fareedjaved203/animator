@@ -20,28 +20,29 @@ const AccordionCard = () => {
       >
         <div className="w-full space-y-6">
           <AccordionItem
-            question="What types of hosting plans do you offer?"
-            answer="We offer shared hosting, VPS hosting, dedicated server hosting, and cloud hosting plans."
+            question="What is your process when working together and creating a youtube
+thumbnail?"
+            answer="Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
             id="answer-1"
             expanded={expanded === "answer-1"}
             toggleAccordion={() => toggleAccordion("answer-1")}
           />
           <AccordionItem
-            question="What is the uptime guarantee for your hosting services?"
+            question="How can a professionally designed thumbnail benefit my youtube channel?"
             answer="We guarantee an uptime of 99.9% for all our hosting services."
             id="answer-2"
             expanded={expanded === "answer-2"}
             toggleAccordion={() => toggleAccordion("answer-2")}
           />
           <AccordionItem
-            question="Do you provide website migration assistance?"
+            question="What sets your Youtube Thumbnail design services apart?"
             answer="Yes, we offer free website migration assistance for new customers."
             id="answer-3"
             expanded={expanded === "answer-3"}
             toggleAccordion={() => toggleAccordion("answer-3")}
           />
           <AccordionItem
-            question="What security measures do you have in place?"
+            question="Is there a free trial available?"
             answer="We employ advanced security measures including firewalls, DDoS protection, and regular security audits."
             id="answer-4"
             expanded={expanded === "answer-4"}
