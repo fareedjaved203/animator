@@ -9,7 +9,7 @@ const Footer = () => {
         style={{ fontSize: "13px", fontWeight: "500" }}
       >
         <div class="flex flex-nowrap flex-col md:w-2/3 justify-center md:flex-row items-center space-y-6 md:space-y-0">
-          <div className="text-[#FFDC23]">Musa.</div>
+          <div className="text-[#FFDC23] text-2xl">Musa.</div>
 
           <nav
             class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center hover:cursor-pointer"
