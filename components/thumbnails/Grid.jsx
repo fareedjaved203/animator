@@ -10,13 +10,13 @@ const GridComponent = () => {
             key={item.id}
             className="rounded-xl m-2 overflow-hidden cursor-pointer hover:scale-105 hover:transition-all hover:duration-300 duration-300"
           >
-            <div className="w-full rounded-[20px] border border-blue-400 overflow-hidden shadow-lg flex justify-center items-center">
+            <div className="w-full rounded-[20px] overflow-hidden shadow-lg flex justify-center items-center">
               <Image
                 src={item.image}
                 width={360}
                 height={360}
                 alt="image"
-                className="cover rounded-[20px] border-3 border-blue-400"
+                className="cover rounded-[20px]"
               />
             </div>
           </div>

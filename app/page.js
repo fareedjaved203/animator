@@ -11,7 +11,7 @@ import Achievements from "@/components/achievements/Achievements";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black font-poppins">
+    <main className="min-h-screen bg-black font-inter">
       <div className="sticky top-0 z-10">
         <Navbar />
       </div>

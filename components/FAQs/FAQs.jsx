@@ -15,7 +15,10 @@ const FAQs = () => {
       className="container mx-auto px-4 md:px-20"
     >
       <div className="my-10 text-center space-y-4">
-        <div className="text-3xl font-semibold text-[#FFDC23]">
+        <div
+          className="text-3xl md:text-4.5xl text-[#FFDC23]"
+          style={{ fontWeight: "900" }}
+        >
           Frequently Asked Questions
         </div>
         <div className="text-white">

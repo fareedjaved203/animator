@@ -8,8 +8,14 @@ module.exports = {
   theme: {
     fontFamily: {
       poppins: ["var(--font-poppins)"],
+      inter: ["var(--font-inter)"],
+      montserrat: ["var(--font-montserrat)"],
+      roboto: ["var(--font-roboto)"],
     },
     extend: {
+      fontSize: {
+        "4.5xl": "2.5rem",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

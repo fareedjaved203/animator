@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div className="md:w-1/4">
+    <div className="md:w-1/3">
       <div className="flex flex-col space-y-4">
         <div className="space-y-2 flex flex-col">
           <label className="text-[#FFDC23]">Name</label>
@@ -29,7 +29,7 @@ const Form = () => {
           placeholder="Message"
         ></textarea>
       </div>
-      <button className="mt-4 w-full bg-[#FFDC23] text-black text-center px-4 py-3 rounded-lg focus:outline-none">
+      <button className="mt-4 w-full bg-[#FFDC23] text-black text-center px-4 py-3 rounded-lg focus:outline-none font-bold">
         Send Message
       </button>
     </div>

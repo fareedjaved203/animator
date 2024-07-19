@@ -49,8 +49,11 @@ const Reviews = () => {
 
   return (
     <div data-aos="fade-up" data-aos-duration="2000">
-      <div className="flex justify-center items-center text-center w-full text-4xl font-semibold text-[#FFDC23] mb-20">
-        <div className="w-3/4">Client Reviews</div>
+      <div
+        className="flex justify-center items-center text-center w-full text-[#FFDC23] mb-20"
+        style={{ fontWeight: "900" }}
+      >
+        <div className="w-3/4 text-4.5xl">Client Reviews</div>
       </div>
 
       <div

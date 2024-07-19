@@ -13,7 +13,7 @@ const Navbar = () => {
         <div class="container mx-auto px-4 py-5 w-2/3 justify-center flex flex-nowrap flex-col md:flex-row items-center">
           <div className="text-[#FFDC23] text-2xl">Musa.</div>
           <nav
-            class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center hover:cursor-pointer "
+            class="font-roboto md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center hover:cursor-pointer "
             style={{ fontSize: "13px", fontWeight: "500" }}
           >
             <Link href="/" class="mr-5 hover:underline ">
@@ -42,7 +42,10 @@ const Navbar = () => {
             </Link>
           </nav>
           <Link href={"/work"}>
-            <button class="border-2 border-[#FFDC23] bg-[#FFDC23] text-[#FFDC23] text-black text-center rounded-lg px-8 py-3 text-nowrap font-bold">
+            <button
+              class="border-2 border-[#FFDC23] bg-[#FFDC23] text-[#FFDC23] text-black text-center rounded-lg px-8 py-3 text-nowrap font-bold"
+              style={{ fontSize: "14px" }}
+            >
               Contact us
             </button>
           </Link>

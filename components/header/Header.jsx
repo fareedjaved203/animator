@@ -32,13 +32,13 @@ const Header = () => {
 
           <div class="flex space-x-4 justify-center items-center mt-4">
             <Link href={"/work"}>
-              <button class="border-2 border-[#FFDC23] text-[#FFDC23] text-[#D9D9D9] text-center rounded-lg px-8 py-3 text-nowrap">
+              <button class="border-2 border-[#FFDC23] text-[#FFDC23] text-[#D9D9D9] text-center rounded-lg px-8 py-3 text-nowrap font-semibold">
                 My Work
               </button>
             </Link>
             <Link href={"#contact"}>
               <button class="bg-[#FFDC23] text-black text-center rounded-lg px-6 py-3 text-nowrap flex space-x-2 justify-center items-center">
-                <div>Contact</div>
+                <div className="font-bold">Contact</div>
                 <div>
                   <svg
                     width="16"

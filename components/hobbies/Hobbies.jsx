@@ -17,12 +17,12 @@ const Hobbies = () => {
       <div className="flex justify-center items-center md:flex-row flex-col-reverse text-white md:px-32">
         <div className="space-y-6 flex-1 px-4 md:px-0 mt-4 md:mt-0">
           <div
-            className="text-[#FFDC23] text-3xl"
-            style={{ fontWeight: "500" }}
+            className="text-[#FFDC23] text-3xl md:text-4.5xl"
+            style={{ fontWeight: "900" }}
           >
-            ABOUT ME
+            About Me
           </div>
-          <div className="text-sm text-[#CACACA]">
+          <div className="text-sm text-[#CACACA] font-roboto">
             We always provide the best for our clients in any case so that all
             their wishes can be realized and have a decent, comfortable and
             aesthetically pleassing place to live. Pleasing environment for the

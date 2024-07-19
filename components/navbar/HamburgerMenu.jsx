@@ -73,7 +73,7 @@ const HamburgerMenu = () => {
                 className="flex flex-col flex-1 overflow-y-auto h-full"
                 style={{ fontSize: "15px" }}
               >
-                <nav className="font-inter text-white flex flex-col space-y-4 flex-1 px-2 py-4 text-xl justify-start items-center bg-black">
+                <nav className="font-roboto text-white flex flex-col space-y-4 flex-1 px-2 py-4 text-xl justify-start items-center bg-black">
                   <a class="mr-5 hover:text-gray-900 hover:underline ">Home</a>
                   <a class="mr-5 hover:text-gray-900 hover:underline">
                     My Work

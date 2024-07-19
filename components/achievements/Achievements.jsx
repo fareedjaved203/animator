@@ -18,11 +18,21 @@ const Achievements = () => {
       <div className="text-white flex justify-center items-center flex-col md:flex-row w-3/4 space-y-4 md:space-y-0">
         <div className="space-y-6  flex-1 flex justify-center items-center flex-col">
           <div>VIEWS</div>
-          <div className="text-8xl">3M+</div>
+          <div
+            className="text-8xl font-montserrat"
+            style={{ fontWeight: "900" }}
+          >
+            3M+
+          </div>
         </div>
         <div className="space-y-6  flex-1 flex justify-center items-center flex-col">
           <div>HAPPY CREATORS</div>
-          <div className="text-8xl">100+</div>
+          <div
+            className="text-8xl font-montserrat"
+            style={{ fontWeight: "900" }}
+          >
+            100+
+          </div>
         </div>
       </div>
     </div>

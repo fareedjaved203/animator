@@ -26,7 +26,10 @@ const Footer = () => {
             <a class="mr-5 hover:underline">FAQs</a>
           </nav>
           <Link href={"/work"}>
-            <button class="border-2 border-[#FFDC23] bg-[#FFDC23] text-[#FFDC23] text-black text-center rounded-lg px-8 py-3 text-nowrap font-bold">
+            <button
+              class="border-2 border-[#FFDC23] bg-[#FFDC23] text-[#FFDC23] text-black text-center rounded-lg px-8 py-3 text-nowrap font-bold"
+              style={{ fontSize: "14px" }}
+            >
               Contact us
             </button>
           </Link>
