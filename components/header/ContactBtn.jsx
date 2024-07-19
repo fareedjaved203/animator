@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const ContactBtn = () => {
@@ -8,22 +8,30 @@ const ContactBtn = () => {
   return (
     <>
       {pathname == "/" ? (
-        <div class="absolute top-36 w-full text-center animate-fade-in animation-delay-1000">
-          <div class="text-6xl text-[#e2b203] font-semibold">
-            Creating for
-            <div>Creators.</div>
+        <div class="w-full text-center animate-fade-in animation-delay-1000">
+          <div className="flex space-x-3 text-[#FFDC23] justify-center items-center">
+            <Image src={"/tick.svg"} width={30} height={30} alt="tick" />
+            <div>Over 200+ Satisfied Clients</div>
           </div>
-          <div class="flex space-x-4 justify-center items-center mt-4">
-            <Link href={"/work"}>
-              <button class="bg-blue-600 text-[#D9D9D9] text-center rounded-full px-10 py-3 text-nowrap">
-                My Work
-              </button>
-            </Link>
-            <Link href={"#contact"}>
-              <button class="bg-blue-600 text-[#D9D9D9] text-center rounded-full px-10 py-3 text-nowrap">
-                Contact Me
-              </button>
-            </Link>
+          <div
+            class="text-4xl md:text-6xl text-white font-semibold flex justify-center items-center flex-col"
+            style={{ fontSize: "58px" }}
+          >
+            Create Your
+            <div className="flex flex-nowrap space-x-4">
+              {" "}
+              <div className="text-[#FFDC23]">
+                Thumbnail
+                <Image
+                  src={"curve.svg"}
+                  width={270}
+                  height={10}
+                  alt="curve"
+                  className="ml-6"
+                />
+              </div>{" "}
+              <div>Now.</div>
+            </div>
           </div>
         </div>
       ) : (

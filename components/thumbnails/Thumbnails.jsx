@@ -14,15 +14,18 @@ const Thumbnails = () => {
       data-aos="fade-up"
       data-aos-duration="2000"
     >
-      <div className="flex flex-col space-y-6 justify-center items-center">
-        <div className="text-3xl md:text-4xl text-center text-[#e2b203] font-semibold">
-          Featured Thumbnails
+      <div className="flex justify-center items-center">
+        <div class="grid grid-cols-2 md:grid-cols-3 md:w-2/3 xl:2/3 space-x-4 px-4">
+          <div class="text-3xl md:text-4xl text-[#FFDC23] font-semibold">
+            Featured <div className="text-white">Thumbnails</div>
+          </div>
+          <div class="col-span-2 text-sm text-[#CACACA]">
+            We always provide the best for our clients in any case so that all
+            their wishes can be realized and have a decent, comfortable and
+            aesthetically pleasing place to live. Pleasing environment for the
+            people using the space.
+          </div>
         </div>
-        <div className="md:w-1/3 text-center text-sm">
-          I take pride in combining design and strategy that exceeds your
-          expectations.
-        </div>
-        <div className="text-sm">Explore my featured thumbnails below!</div>
       </div>
       <div className="mt-10 md:mt-20">
         <GridComponent />

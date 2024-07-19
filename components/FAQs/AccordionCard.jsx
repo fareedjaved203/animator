@@ -15,7 +15,7 @@ const AccordionCard = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div
-        className="clash-display md:w-1/2 py-4 text-[#161616]"
+        className="clash-display md:w-1/2 py-4 text-white"
         style={{ lineHeight: "26px" }}
       >
         <div className="w-full space-y-6">
@@ -55,16 +55,16 @@ const AccordionCard = () => {
 
 const AccordionItem = ({ question, answer, id, expanded, toggleAccordion }) => {
   return (
-    <div className="bg-black rounded-xl border border-blue-600 cursor-pointer transition-all duration-300">
+    <div className="bg-black rounded-xl border border-[#FFDC23] cursor-pointer transition-all duration-300">
       <button
         className="question-btn flex w-full items-start gap-x-5 justify-between rounded-lg text-left text-lg font-bold focus:outline-none p-5"
         onClick={toggleAccordion}
         aria-expanded={expanded}
         aria-controls={id}
       >
-        <span className="text-[#e2b203] text-sm">{question}</span>
+        <span className="text-[#FFDC23] text-sm">{question}</span>
         <svg
-          className={`mt-1.5 bg-blue-700 rounded-full md:mt-0 flex-shrink-0 transform h-6 w-6 ${
+          className={`mt-1.5 border border-white border-2 rounded-full md:mt-0 flex-shrink-0 transform h-6 w-6 ${
             expanded ? "rotate-180" : ""
           }`}
           xmlns="http://www.w3.org/2000/svg"

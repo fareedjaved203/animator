@@ -3,7 +3,7 @@ import thumbnails from "./thumbnails.json";
 
 const GridComponent = () => {
   return (
-    <div className="container mx-auto flex justify-center items-center">
+    <div className="flex justify-center items-center">
       <div className="grid grid-cols-2 md:grid-cols-3 md:w-[65%] xl:2/3">
         {thumbnails.map((item) => (
           <div

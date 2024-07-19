@@ -11,15 +11,12 @@ import Achievements from "@/components/achievements/Achievements";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#041014] font-poppins">
+    <main className="min-h-screen bg-black font-poppins">
       <div className="sticky top-0 z-10">
         <Navbar />
       </div>
       <div>
         <Header />
-      </div>
-      <div id="work" className="mt-24">
-        <Slider />
       </div>
       <div id="feature" className="mt-24">
         <Thumbnails />
@@ -27,11 +24,14 @@ export default function Home() {
       <div id="about" className="mt-24">
         <Hobbies />
       </div>
-      <div id="testimonials" className="mt-24">
-        <Reviews />
-      </div>
       <div id="results" className="mt-24">
         <Achievements />
+      </div>
+      <div id="work" className="mt-24">
+        <Slider />
+      </div>
+      <div id="testimonials" className="mt-24">
+        <Reviews />
       </div>
       <div id="faqs" className="mt-24">
         <FAQs />
