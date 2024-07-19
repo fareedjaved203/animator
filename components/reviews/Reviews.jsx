@@ -70,7 +70,9 @@ const Reviews = () => {
               <div className="p-2 px-3">
                 <Stars />
               </div>
-              <div className="text-xs mt-2 italic">"{review.review}"</div>
+              <div className="text-xs mt-2 italic">
+                &quot;{review.review}&quot;
+              </div>
 
               <div className="flex justify-center items-center">
                 <div className="flex-1">
