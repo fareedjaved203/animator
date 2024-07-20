@@ -15,7 +15,7 @@ const HamburgerMenu = () => {
   };
   return (
     <header className={`block md:hidden px-4 py-2 bg-black`}>
-      <div class="flex flex-row justify-between items-center">
+      <div className="flex flex-row justify-between items-center">
         <Link href={"/"}>
           <div
             className="text-[#FFDC23] cursor-pointer"
@@ -78,47 +78,56 @@ const HamburgerMenu = () => {
                 style={{ fontSize: "15px" }}
               >
                 <nav className="font-roboto text-white flex flex-col space-y-4 flex-1 px-2 py-4 text-xl justify-start items-center bg-black">
-                  <Link href="/" class="mr-5 relative inline-block group ">
+                  <Link href="/" className="mr-5 relative inline-block group ">
                     Home
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
                   </Link>
 
-                  <Link href="/work" class="mr-5 relative inline-block group">
+                  <Link
+                    href="/work"
+                    className="mr-5 relative inline-block group"
+                  >
                     My Work
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
                   </Link>
 
                   <Link
                     href="/#feature"
-                    class="mr-5 relative inline-block group"
+                    className="mr-5 relative inline-block group"
                   >
                     Featured
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
                   </Link>
-                  <Link href="/#about" class="mr-5 relative inline-block group">
+                  <Link
+                    href="/#about"
+                    className="mr-5 relative inline-block group"
+                  >
                     About Me
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
                   </Link>
                   <Link
                     href="/#testimonials"
-                    class="mr-5 relative inline-block group"
+                    className="mr-5 relative inline-block group"
                   >
                     Testimonials
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
                   </Link>
                   <Link
                     href="/#results"
-                    class="mr-5 relative inline-block group"
+                    className="mr-5 relative inline-block group"
                   >
                     Results
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
                   </Link>
-                  <Link href="/#faqs" class="mr-5 relative inline-block group">
+                  <Link
+                    href="/#faqs"
+                    className="mr-5 relative inline-block group"
+                  >
                     FAQs
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
                   </Link>
                   <Link href={"/#contact"}>
-                    <button class="border-2 border-[#FFDC23] bg-[#FFDC23] text-black text-center rounded-lg px-8 py-3 text-nowrap font-bold">
+                    <button className="border-2 border-[#FFDC23] bg-[#FFDC23] text-black text-center rounded-lg px-8 py-3 text-nowrap font-bold">
                       Contact us
                     </button>
                   </Link>

@@ -8,7 +8,7 @@ const ContactBtn = () => {
   return (
     <>
       {pathname == "/" ? (
-        <div class="w-full text-center animate-fade-in animation-delay-1000 space-y-4">
+        <div className="w-full text-center animate-fade-in animation-delay-1000 space-y-4">
           <div className="flex space-x-3 text-[#FFDC23] justify-center items-center">
             <Image src={"/tick.svg"} width={30} height={30} alt="tick" />
             <div
@@ -23,7 +23,7 @@ const ContactBtn = () => {
             </div>
           </div>
           <div
-            class="text-4xl md:text-6xl text-white font-semibold flex justify-center items-center flex-col"
+            className="text-4xl md:text-6xl text-white font-semibold flex justify-center items-center flex-col"
             style={{ fontWeight: "900" }}
           >
             Create Your
@@ -44,9 +44,9 @@ const ContactBtn = () => {
           </div>
         </div>
       ) : (
-        <div class="flex justify-center items-center flex-col w-full text-center animate-fade-in animation-delay-1000">
+        <div className="flex justify-center items-center flex-col w-full text-center animate-fade-in animation-delay-1000">
           <div
-            class="space-y-4 text-6xl text-white"
+            className="space-y-4 text-6xl text-white"
             style={{ fontWeight: "900" }}
           >
             My <span className="text-[#FFDC23]">Work</span>
