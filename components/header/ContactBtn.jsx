@@ -8,14 +8,14 @@ const ContactBtn = () => {
   return (
     <>
       {pathname == "/" ? (
-        <div className="w-full text-center animate-fade-in animation-delay-1000 space-y-4">
+        <div className="w-full text-center animate-fade-in animation-delay-1000 space-y-6">
           <div className="flex space-x-3 text-[#FFDC23] justify-center items-center">
             <Image src={"/tick.svg"} width={30} height={30} alt="tick" />
             <div
               className="font-lato"
               style={{
                 fontWeight: "700",
-                fontSize: "16px",
+                fontSize: "20px",
                 letterSpacing: "6%",
               }}
             >

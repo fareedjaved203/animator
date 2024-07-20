@@ -30,7 +30,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="flex space-x-4 justify-center items-center mt-4">
+          <div className="flex space-x-4 justify-center items-center mt-6">
             <Link href={"/work"}>
               <button
                 className="border-2 border-[#FFDC23] text-[#FFDC23] text-[#D9D9D9] text-center rounded-lg px-8 py-3 text-nowrap font-semibold"
