@@ -45,14 +45,14 @@ const LeftHorizontalScroll = () => {
         data-direction="left"
         data-speed="slow"
       >
-        <div className="scroller__inner-left p-1">
+        <div className="scroller__inner-left ">
           {slider?.map((item) => (
             <div key={item?.id} className="">
               <Image
-                width={220}
-                height={120}
+                width={230}
+                height={130}
                 alt="image"
-                className="rounded-xl aspect-video object-cover cursor-pointer"
+                className="rounded-xl w-64 h-40 aspect-video object-cover cursor-pointer"
                 src={item?.image}
               />
             </div>

@@ -14,31 +14,33 @@ const Hobbies = () => {
       data-aos="fade-up"
       data-aos-duration="2000"
     >
-      <div className="flex justify-center items-center md:flex-row flex-col-reverse text-white md:px-32">
-        <div className="space-y-6 flex-1 px-4 md:px-0 mt-4 md:mt-0">
-          <div
-            className="text-[#FFDC23] text-3xl md:text-4.5xl"
-            style={{ fontWeight: "900" }}
-          >
-            About Me
-          </div>
-          <div
-            className="text-sm text-[#CACACA] font-roboto"
-            style={{ fontSize: "14px" }}
-          >
-            We always provide the best for our clients in any case so that all
-            their wishes can be realized and have a decent, comfortable and
-            aesthetically pleassing place to live. Pleasing environment for the
-            people using the space.
+      <div className="grid md:grid-cols-3 place-items-center text-white md:px-16">
+        <div className="w-full col-span-2 ">
+          <div className="space-y-6 px-4 md:px-0 mt-4 md:mt-0 w-[90%]">
+            <div
+              className="text-[#FFDC23] text-3xl md:text-4.5xl"
+              style={{ fontWeight: "900" }}
+            >
+              About Me
+            </div>
+            <div
+              className="text-sm text-[#CACACA] font-roboto"
+              style={{ fontSize: "16px" }}
+            >
+              We always provide the best for our clients in any case so that all
+              their wishes can be realized and have a decent, comfortable and
+              aesthetically pleassing place to live. Pleasing environment for
+              the people using the space.
+            </div>
           </div>
         </div>
-        <div className="flex justify-end items-center flex-1">
+        <div className="flex justify-end items-center">
           <Image
             src={
               "https://tvline.com/wp-content/uploads/2024/03/mrbeast-amazon-prime.jpg?w=600&h=400&crop=1"
             }
-            width={230}
-            height={230}
+            width={250}
+            height={250}
             alt="me"
             className="rounded-full aspect-square object-cover cursor-pointer hover:scale-105 hover:transition-all"
           />

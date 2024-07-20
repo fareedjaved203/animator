@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div className="md:w-1/3">
+    <div className="md:w-[40%]">
       <div className="flex flex-col space-y-4">
         <div className="space-y-2 flex flex-col">
           <label className="text-[#FFDC23]">Name</label>
