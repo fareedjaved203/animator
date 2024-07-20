@@ -10,12 +10,12 @@ const Hobbies = () => {
   }, []);
   return (
     <div
-      className="container mx-auto px-4 xl:px-40 2xl:px-64"
+      className="container mx-auto px-4 md:px-20 flex justify-center items-center flex-col"
       data-aos="fade-up"
       data-aos-duration="2000"
     >
-      <div className="grid md:grid-cols-3 place-items-center text-white md:px-16">
-        <div className="w-full col-span-2 ">
+      <div className="grid md:grid-cols-3 place-items-center text-white w-[75%]">
+        <div className="col-span-2 w-full">
           <div className="space-y-6 px-4 md:px-0 mt-4 md:mt-0 w-[90%]">
             <div
               className="text-[#FFDC23] text-3xl md:text-4.5xl"

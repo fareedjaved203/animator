@@ -16,7 +16,7 @@ export default function WorkPage() {
       <div id="work" className="mt-10">
         <Work />
       </div>
-      <div className="mt-24">
+      <div className="mt-32">
         <Footer />
       </div>
     </main>
