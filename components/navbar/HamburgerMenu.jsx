@@ -14,9 +14,16 @@ const HamburgerMenu = () => {
     setActiveLink(link);
   };
   return (
-    <header className="block md:hidden px-4 py-2 bg-black">
+    <header className={`block md:hidden px-4 py-2 bg-black`}>
       <div class="flex flex-row justify-between items-center">
-        <div className="text-[#FFDC23] text-2xl">Musa.</div>
+        <Link href={"/"}>
+          <div
+            className="text-[#FFDC23] cursor-pointer"
+            style={{ fontSize: "16px", fontWeight: "700" }}
+          >
+            Musa.
+          </div>
+        </Link>
 
         <button
           onClick={toggleSidebar}
@@ -39,20 +46,17 @@ const HamburgerMenu = () => {
         </button>
         {isSidebarVisible && (
           <div
-            className="fixed top-0 left-0 h-screen md:hidden"
+            className={`fixed top-0 left-0 h-screen md:hidden 
+      transition-transform duration-300 transform ${
+        isSidebarVisible ? "translate-x-0" : "-translate-x-full"
+      }`}
             style={{
               zIndex: "20",
               backgroundColor: "white",
               boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
             }}
           >
-            <div
-              className={
-                isSidebarVisible
-                  ? "flex flex-col w-64 bg-black h-full"
-                  : "hidden md:flex flex-col w-64 bg-black"
-              }
-            >
+            <div className="flex flex-col w-64 bg-black h-full">
               <div className="p-3 w-full flex justify-end">
                 <button onClick={() => setSidebarVisibility(false)}>
                   <svg
@@ -74,23 +78,45 @@ const HamburgerMenu = () => {
                 style={{ fontSize: "15px" }}
               >
                 <nav className="font-roboto text-white flex flex-col space-y-4 flex-1 px-2 py-4 text-xl justify-start items-center bg-black">
-                  <a class="mr-5 hover:text-gray-900 hover:underline ">Home</a>
-                  <a class="mr-5 hover:text-gray-900 hover:underline">
+                  <Link href="/" class="mr-5 relative inline-block group ">
+                    Home
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
+                  </Link>
+
+                  <Link href="/work" class="mr-5 relative inline-block group">
                     My Work
-                  </a>
-                  <a class="mr-5 hover:text-gray-900 hover:underline">
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
+                  </Link>
+
+                  <Link
+                    href="/#feature"
+                    class="mr-5 relative inline-block group"
+                  >
                     Featured
-                  </a>
-                  <a class="mr-5 hover:text-gray-900 hover:underline flex justify-center items-center space-x-1">
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
+                  </Link>
+                  <Link href="/#about" class="mr-5 relative inline-block group">
                     About Me
-                  </a>
-                  <a class="mr-5 hover:text-gray-900 hover:underline">
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
+                  </Link>
+                  <Link
+                    href="/#testimonials"
+                    class="mr-5 relative inline-block group"
+                  >
                     Testimonials
-                  </a>
-                  <a class="mr-5 hover:text-gray-900 hover:underline">
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
+                  </Link>
+                  <Link
+                    href="/#results"
+                    class="mr-5 relative inline-block group"
+                  >
                     Results
-                  </a>
-                  <a class="mr-5 hover:text-gray-900 hover:underline">FAQs</a>
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
+                  </Link>
+                  <Link href="/#faqs" class="mr-5 relative inline-block group">
+                    FAQs
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
+                  </Link>
                   <Link href={"/work"}>
                     <button class="border-2 border-[#FFDC23] bg-[#FFDC23] text-black text-center rounded-lg px-8 py-3 text-nowrap font-bold">
                       Contact us
