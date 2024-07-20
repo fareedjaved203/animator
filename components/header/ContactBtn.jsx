@@ -45,7 +45,10 @@ const ContactBtn = () => {
         </div>
       ) : (
         <div class="flex justify-center items-center flex-col w-full text-center animate-fade-in animation-delay-1000">
-          <div class="text-6xl text-white font-semibold">
+          <div
+            class="space-y-4 text-6xl text-white"
+            style={{ fontWeight: "900" }}
+          >
             My <span className="text-[#FFDC23]">Work</span>
             <Image
               src={"curve.svg"}

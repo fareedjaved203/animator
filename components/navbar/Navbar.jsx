@@ -57,7 +57,7 @@ const Navbar = () => {
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
             </Link>
           </nav>
-          <Link href={"/work"}>
+          <Link href={"/#contact"}>
             <button
               class="border-2 border-[#FFDC23] bg-[#FFDC23] text-black text-center rounded-lg px-8 py-3 text-nowrap"
               style={{ fontSize: "16px", fontWeight: "700" }}
