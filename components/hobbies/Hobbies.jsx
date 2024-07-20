@@ -22,7 +22,10 @@ const Hobbies = () => {
           >
             About Me
           </div>
-          <div className="text-sm text-[#CACACA] font-roboto">
+          <div
+            className="text-sm text-[#CACACA] font-roboto"
+            style={{ fontSize: "14px" }}
+          >
             We always provide the best for our clients in any case so that all
             their wishes can be realized and have a decent, comfortable and
             aesthetically pleassing place to live. Pleasing environment for the
@@ -34,8 +37,8 @@ const Hobbies = () => {
             src={
               "https://tvline.com/wp-content/uploads/2024/03/mrbeast-amazon-prime.jpg?w=600&h=400&crop=1"
             }
-            width={220}
-            height={220}
+            width={230}
+            height={230}
             alt="me"
             className="rounded-full aspect-square object-cover cursor-pointer hover:scale-105 hover:transition-all"
           />

@@ -15,7 +15,7 @@ const AccordionCard = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div
-        className="clash-display md:w-1/2 py-4 text-white"
+        className="clash-display md:w-[58%] py-4 text-white"
         style={{ lineHeight: "26px" }}
       >
         <div className="w-full space-y-6">
@@ -56,7 +56,7 @@ thumbnail?"
 
 const AccordionItem = ({ question, answer, id, expanded, toggleAccordion }) => {
   return (
-    <div className="bg-black rounded-xl border border-[#FFDC23] cursor-pointer transition-all duration-300">
+    <div className="bg-black rounded-lg border border-[#FFDC23] cursor-pointer transition-all duration-300">
       <button
         className="question-btn flex w-full items-start gap-x-5 justify-between rounded-lg text-left text-lg font-bold focus:outline-none p-5"
         onClick={toggleAccordion}

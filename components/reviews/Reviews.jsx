@@ -53,7 +53,7 @@ const Reviews = () => {
         className="flex justify-center items-center text-center w-full text-[#FFDC23] mb-20"
         style={{ fontWeight: "900" }}
       >
-        <div className="w-3/4 text-4.5xl">Client Reviews</div>
+        <div className="w-3/4 text-4.5xl text-nowrap">Client Reviews</div>
       </div>
 
       <div
