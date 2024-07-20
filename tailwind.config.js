@@ -11,6 +11,7 @@ module.exports = {
       inter: ["var(--font-inter)"],
       montserrat: ["var(--font-montserrat)"],
       roboto: ["var(--font-roboto)"],
+      lato: ["var(--font-lato)"],
     },
     extend: {
       fontSize: {

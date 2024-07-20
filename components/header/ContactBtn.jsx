@@ -11,9 +11,21 @@ const ContactBtn = () => {
         <div class="w-full text-center animate-fade-in animation-delay-1000 space-y-4">
           <div className="flex space-x-3 text-[#FFDC23] justify-center items-center">
             <Image src={"/tick.svg"} width={30} height={30} alt="tick" />
-            <div>Over 200+ Satisfied Clients</div>
+            <div
+              className="font-lato"
+              style={{
+                fontWeight: "700",
+                fontSize: "16px",
+                letterSpacing: "6%",
+              }}
+            >
+              Over 200+ Satisfied Clients
+            </div>
           </div>
-          <div class="text-4xl md:text-6xl text-white font-semibold flex justify-center items-center flex-col">
+          <div
+            class="text-4xl md:text-6xl text-white font-semibold flex justify-center items-center flex-col"
+            style={{ fontWeight: "900" }}
+          >
             Create Your
             <div className="flex flex-nowrap space-x-2 md:space-x-4">
               {" "}

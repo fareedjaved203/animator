@@ -29,7 +29,7 @@
 }
 
 .scroller-left[data-speed="slow"] {
-  --_animation-duration: 60s;
+  --_animation-duration: 100s;
 }
 
 @keyframes scroll {
