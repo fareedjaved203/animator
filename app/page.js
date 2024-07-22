@@ -18,7 +18,8 @@ export default function Home() {
       <div className="pt-20 min-h-[564px]">
         <Header />
       </div>
-      <div id="feature" className="mt-24 md:mt-32">
+      <div id="feature" className="mt-10"></div>
+      <div className="mt-24 md:mt-32">
         <Thumbnails />
       </div>
       <div id="about" className="mt-24 md:mt-32">
