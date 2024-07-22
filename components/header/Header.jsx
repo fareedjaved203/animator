@@ -13,10 +13,8 @@ const Header = () => {
     AOS.init({});
   }, []);
   return (
-    <div className="relative">
-      <div className="mb-6">
-        <ContactBtn />
-      </div>
+    <div className="relative space-y-6">
+      <ContactBtn />
 
       {pathname == "/" && (
         <>
@@ -30,17 +28,17 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="flex space-x-4 justify-center items-center mt-6">
+          <div className="flex space-x-4 justify-center items-center">
             <Link href={"/work"}>
               <button
-                className="border-2 border-[#FFDC23] text-[#FFDC23] text-[#D9D9D9] text-center rounded-lg px-8 py-3 text-nowrap font-semibold"
+                className="h-[56px] w-[158px] border-2 border-[#FFDC23] flex items-center justify-center text-[#D9D9D9] text-center rounded-lg text-nowrap font-semibold"
                 style={{ fontSize: "18px" }}
               >
                 My Work
               </button>
             </Link>
             <Link href={"#contact"}>
-              <button className="bg-[#FFDC23] text-black text-center rounded-lg px-6 py-3 text-nowrap flex space-x-2 justify-center items-center">
+              <button className="bg-[#FFDC23] h-[54px] w-[158px]  text-black text-center rounded-lg text-nowrap flex space-x-2 justify-center items-center">
                 <div className="font-bold" style={{ fontSize: "18px" }}>
                   Contact
                 </div>

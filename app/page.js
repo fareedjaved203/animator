@@ -15,7 +15,7 @@ export default function Home() {
       <div className="sticky top-0 z-10">
         <Navbar />
       </div>
-      <div className="mt-16">
+      <div className="pt-20 min-h-[564px]">
         <Header />
       </div>
       <div id="feature" className="mt-24 md:mt-32">

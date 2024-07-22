@@ -39,25 +39,23 @@ const LeftHorizontalScroll = () => {
   }, []);
 
   return (
-    <div>
-      <div
-        className="scroller-left w-full"
-        data-direction="left"
-        data-speed="slow"
-      >
-        <div className="scroller__inner-left ">
-          {slider?.map((item) => (
-            <div key={item?.id} className="">
-              <Image
-                width={230}
-                height={130}
-                alt="image"
-                className="rounded-xl w-64 h-40 aspect-video object-cover cursor-pointer"
-                src={item?.image}
-              />
-            </div>
-          ))}
-        </div>
+    <div
+      className="scroller-left w-full"
+      data-direction="left"
+      data-speed="slow"
+    >
+      <div className="scroller__inner-left ">
+        {slider?.map((item) => (
+          <div key={item?.id} className="">
+            <Image
+              width={230}
+              height={130}
+              alt="image"
+              className="rounded-xl w-[268px] h-[151px] aspect-video object-cover cursor-pointer"
+              src={item?.image}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
