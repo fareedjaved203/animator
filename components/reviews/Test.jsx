@@ -47,7 +47,7 @@ const CarouselSlider = () => {
                     <Stars />
                   </div>
                   <div className="text-sm font-medium mt-2 italic text-[#CACACA]">
-                    "{review.review}"
+                    &quot;{review.review}&quot;
                   </div>
                   <div className="flex justify-start items-center space-x-4">
                     <div className="">
