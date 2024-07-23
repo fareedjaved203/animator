@@ -23,7 +23,7 @@ const CarouselSlider = () => {
         >
           <div className="flex justify-center items-center">
             <div
-              className="flex justify-between items-center text-center w-[960px] text-[#FFDC23] mb-20"
+              className="flex space-y-4 md:space-y-0 flex-col md:flex-row justify-between items-center text-center w-[960px] text-[#FFDC23] mb-20"
               style={{ fontWeight: "900" }}
             >
               <div className="text-4xl md:text-4.5xl text-nowrap">
@@ -40,7 +40,7 @@ const CarouselSlider = () => {
             {clientReviews.map((review) => (
               <CarouselItem
                 key={review.id}
-                className="md:basis-1/4 lg:basis-[24%] 2xl:basis-[22.22%] ml-4"
+                className="basis-1/1 lg:basis-[24%] 2xl:basis-[22.22%] md:ml-4"
               >
                 <div className="text-white flex flex-col space-y-3 overflow-auto space-x-4 mb-8 pl-0 bg-black rounded-xl h-[234px] w-[310px] py-2 border border-white cursor-pointer">
                   <div className="p-2 px-3">

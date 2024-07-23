@@ -16,7 +16,7 @@ const Contact = () => {
     >
       <div className="text-center space-y-5">
         <div
-          className="text-3xl md:text-[48px] text-[#FFDC23] font-semibold"
+          className="text-4xl md:text-[48px] text-[#FFDC23] font-semibold"
           style={{ fontWeight: "900" }}
         >
           Get in touch today!

@@ -16,9 +16,9 @@ const Hobbies = () => {
     >
       <div className="grid grid-cols-1 md:grid-cols-3 place-items-center text-white lg:w-[840px] 2xl:w-[930px]">
         <div className="col-span-2 w-full order-2 md:order-1">
-          <div className="space-y-4 px-4 md:px-0 mt-4 md:mt-0 md:w-[90%]">
+          <div className="space-y-4 md:px-0 mt-4 md:mt-0 md:w-[90%]">
             <div
-              className="text-[#FFDC23] text-3xl md:text-4.5xl"
+              className="text-[#FFDC23] text-4xl md:text-4.5xl"
               style={{ fontWeight: "900" }}
             >
               About Me
@@ -34,7 +34,7 @@ const Hobbies = () => {
             </div>
           </div>
         </div>
-        <div className="order-1 md:order-2 flex justify-end items-center ml-auto">
+        <div className="order-1 md:order-2 flex justify-center md:justify-end items-center md:ml-auto">
           <Image
             src={
               "https://tvline.com/wp-content/uploads/2024/03/mrbeast-amazon-prime.jpg?w=600&h=400&crop=1"

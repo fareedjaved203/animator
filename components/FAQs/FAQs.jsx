@@ -16,12 +16,12 @@ const FAQs = () => {
     >
       <div className="my-10 text-center space-y-6">
         <div
-          className="text-3xl md:text-[48px] text-[#FFDC23]"
+          className="text-4xl md:text-[48px] text-[#FFDC23]"
           style={{ fontWeight: "900" }}
         >
           Frequently Asked Questions
         </div>
-        <div className="text-white text-sm">
+        <div className="text-white text-md">
           Everything you need to know about the product and billing.
         </div>
       </div>
