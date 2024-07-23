@@ -14,7 +14,7 @@ const Hobbies = () => {
       data-aos="fade-up"
       data-aos-duration="2000"
     >
-      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center text-white md:w-[75%]">
+      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center text-white md:w-[940px]">
         <div className="col-span-2 w-full order-2 md:order-1">
           <div className="space-y-4 px-4 md:px-0 mt-4 md:mt-0 md:w-[90%]">
             <div
@@ -29,12 +29,12 @@ const Hobbies = () => {
             >
               We always provide the best for our clients in any case so that all
               their wishes can be realized and have a decent, comfortable and
-              aesthetically pleassing place to live. Pleasing environment for
-              the people using the space.
+              aesthetically pleasing place to live. Pleasing environment for the
+              people using the space.
             </div>
           </div>
         </div>
-        <div className="order-1 md:order-2 flex justify-end items-center">
+        <div className="order-1 md:order-2 flex justify-end items-center ml-auto">
           <Image
             src={
               "https://tvline.com/wp-content/uploads/2024/03/mrbeast-amazon-prime.jpg?w=600&h=400&crop=1"
