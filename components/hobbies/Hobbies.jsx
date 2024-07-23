@@ -42,7 +42,7 @@ const Hobbies = () => {
             width={250}
             height={250}
             alt="me"
-            className="rounded-full aspect-square object-cover cursor-pointer hover:scale-105 hover:transition-all"
+            className="rounded-full w-[256px] h-[256px] aspect-square object-cover cursor-pointer hover:scale-105 hover:transition-all"
           />
         </div>
       </div>
