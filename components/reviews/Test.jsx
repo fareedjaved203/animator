@@ -40,7 +40,7 @@ const CarouselSlider = () => {
             {clientReviews.map((review) => (
               <CarouselItem
                 key={review.id}
-                className="basis-1/1 lg:basis-[24%] 2xl:basis-[22.22%] md:ml-4"
+                className="basis-1/1 lg:basis-[24%] 2xl:basis-[21.5%] 3xl:basis-[16%] 4xl:basis-[12%] md:ml-4"
               >
                 <div className="text-white flex flex-col space-y-3 overflow-auto space-x-4 mb-8 pl-0 bg-black rounded-xl h-[234px] w-[310px] py-2 border border-white cursor-pointer">
                   <div className="p-2 px-3">
