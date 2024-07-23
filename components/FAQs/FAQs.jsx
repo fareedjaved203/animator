@@ -16,7 +16,7 @@ const FAQs = () => {
     >
       <div className="my-10 text-center space-y-6">
         <div
-          className="text-3xl md:text-4.5xl text-[#FFDC23]"
+          className="text-3xl md:text-[48px] text-[#FFDC23]"
           style={{ fontWeight: "900" }}
         >
           Frequently Asked Questions
