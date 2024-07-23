@@ -8,6 +8,7 @@ import FAQs from "@/components/FAQs/FAQs";
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/footer/Footer";
 import Achievements from "@/components/achievements/Achievements";
+import CarouselSlider from "@/components/reviews/Test";
 
 export default function Home() {
   return (
@@ -18,29 +19,36 @@ export default function Home() {
       <div className="pt-20 min-h-[564px]">
         <Header />
       </div>
-      <div id="feature" className="mt-10"></div>
-      <div className="mt-24 md:mt-32">
+      <div id="feature" className=""></div>
+      <div className="mt-24">
         <Thumbnails />
       </div>
-      <div id="about" className="mt-24 md:mt-32">
+      <div id="about" className=""></div>
+      <div className="mt-24">
         <Hobbies />
       </div>
-      <div id="results" className="mt-24 md:mt-32">
+      <div id="results" className=""></div>
+      <div className="mt-24">
         <Achievements />
       </div>
-      <div id="work" className="mt-24 md:mt-32">
+      <div id="work" className=""></div>
+      <div className="mt-24">
         <Slider />
       </div>
-      <div id="testimonials" className="mt-24 md:mt-32">
-        <Reviews />
+      <div id="testimonials" className=""></div>
+      <div className="mt-24">
+        {/* <Reviews /> */}
+        <CarouselSlider />
       </div>
-      <div id="faqs" className="mt-24 md:mt-32">
+      <div id="faqs" className=""></div>
+      <div className="mt-24">
         <FAQs />
       </div>
-      <div id="contact" className="mt-24 md:mt-32">
+      <div id="contact" className=""></div>
+      <div className="mt-24">
         <Contact />
       </div>
-      <div className="mt-24 md:mt-32">
+      <div className="mt-24">
         <Footer />
       </div>
     </main>

@@ -6,10 +6,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <>
-      <header
-        className="hidden md:block text-white font-inter bg-opacity-80 h-[82px]"
-        style={{ fontSize: "13px", fontWeight: "500" }}
-      >
+      <header className="hidden md:block bg-black text-white font-inter bg-opacity-80 h-[82px]">
         <div className="container mx-auto px-4 py-5 w-2/3 justify-center flex flex-nowrap flex-col md:flex-row items-center">
           <Link href={"/"}>
             <div
@@ -20,37 +17,63 @@ const Navbar = () => {
             </div>
           </Link>
           <nav className="font-roboto font-normal md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center hover:cursor-pointer space-x-6">
-            <Link href="/" className="relative inline-block group ">
+            <Link
+              href="/"
+              className="relative inline-block group font-normal text-[#CACACA] hover:text-white active:text-white hover:font-normal"
+            >
               Home
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
             </Link>
 
-            <Link href="/work" className="relative inline-block group">
+            <Link
+              href="/work"
+              className="relative inline-block group font-normal hover:font-normal text-[#CACACA] hover:text-white active:text-white"
+            >
               My Work
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
             </Link>
 
-            <Link href="/#feature" className="relative inline-block group">
+            <Link
+              href="/#feature"
+              className="relative inline-block group font-normal hover:font-normal text-[#CACACA] hover:text-white active:text-white"
+            >
               Featured
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
             </Link>
-            <Link href="/#about" className="relative inline-block group">
+
+            <Link
+              href="/#about"
+              className="relative inline-block group font-normal hover:font-normal text-[#CACACA] hover:text-white active:text-white"
+            >
               About Me
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
             </Link>
-            <Link href="/#testimonials" className="relative inline-block group">
+
+            <Link
+              href="/#testimonials"
+              className="relative inline-block group font-normal hover:font-normal text-[#CACACA] hover:text-white active:text-white"
+            >
               Testimonials
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
             </Link>
-            <Link href="/#results" className="relative inline-block group">
+
+            <Link
+              href="/#results"
+              className="relative inline-block group font-normal hover:font-normal text-[#CACACA] hover:text-white active:text-white"
+            >
               Results
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
             </Link>
-            <Link href="/#faqs" className="relative inline-block group">
+
+            <Link
+              href="/#faqs"
+              className="relative inline-block group font-normal hover:font-normal text-[#CACACA] hover:text-white active:text-white"
+            >
               FAQs
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-450 ease-in-out"></span>
             </Link>
           </nav>
+
           <Link href={"/#contact"}>
             <button
               className="border-2 border-[#FFDC23] bg-[#FFDC23] text-black rounded-lg flex justify-center items-center text-nowrap h-[50px] w-[115px]"

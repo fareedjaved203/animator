@@ -28,7 +28,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="flex space-x-4 justify-center items-center">
+          <div className="flex space-x-8 justify-center items-center">
             <Link href={"/work"}>
               <button
                 className="h-[56px] w-[158px] border-2 border-[#FFDC23] flex items-center justify-center text-[#D9D9D9] text-center rounded-lg text-nowrap font-semibold"

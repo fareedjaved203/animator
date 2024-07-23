@@ -52,7 +52,7 @@ const Slider = () => {
                 width={150}
                 height={150}
                 alt="image"
-                className="rounded-lg aspect-square object-cover cursor-pointer"
+                className="w-[160px] h-[161px] rounded-lg aspect-square object-cover cursor-pointer"
                 src={item?.image}
               />
             </div>

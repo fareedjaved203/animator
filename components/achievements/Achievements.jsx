@@ -17,7 +17,7 @@ const Achievements = () => {
     >
       <div className="text-white flex justify-around md:justify-center items-center md:flex-row w-full md:w-1/2 md:space-y-0">
         <div
-          className="md:space-y-6 md:flex-1  flex justify-center items-center flex-col"
+          className="md:space-y-1 md:flex-1  flex justify-center items-center flex-col"
           style={{ fontSize: "16px" }}
         >
           <div>VIEWS</div>
@@ -28,7 +28,7 @@ const Achievements = () => {
             3M+
           </div>
         </div>
-        <div className="md:space-y-6 md:flex-1 flex justify-center items-center flex-col">
+        <div className="md:space-y-1 md:flex-1 flex justify-center items-center flex-col">
           <div style={{ fontSize: "16px" }} className="text-nowrap">
             HAPPY CREATORS
           </div>
