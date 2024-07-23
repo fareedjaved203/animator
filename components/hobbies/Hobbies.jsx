@@ -14,7 +14,7 @@ const Hobbies = () => {
       data-aos="fade-up"
       data-aos-duration="2000"
     >
-      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center text-white lg:w-[840px] 2xl:w-[930px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center text-white md:w-[740px] lg:w-[840px] 2xl:w-[930px]">
         <div className="col-span-2 w-full order-2 md:order-1">
           <div className="space-y-4 md:px-0 mt-4 md:mt-0 md:w-[90%]">
             <div
