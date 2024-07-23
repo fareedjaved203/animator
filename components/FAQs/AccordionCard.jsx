@@ -65,7 +65,7 @@ const AccordionItem = ({ question, answer, id, expanded, toggleAccordion }) => {
       >
         <span className="text-[#FFDC23] text-sm">{question}</span>
         <svg
-          className={`mt-1.5 border border-white border-2 rounded-full md:mt-0 flex-shrink-0 transform h-6 w-6 ${
+          className={`mt-1.5 border-white border-2 rounded-full md:mt-0 flex-shrink-0 transform h-6 w-6 ${
             expanded ? "rotate-180" : ""
           }`}
           xmlns="http://www.w3.org/2000/svg"
