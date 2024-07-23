@@ -10,7 +10,7 @@ export const Work = () => {
   }, []);
   return (
     <div
-      className="container mx-auto text-white"
+      className="md:container mx-auto text-white"
       data-aos="fade-up"
       data-aos-duration="2000"
     >

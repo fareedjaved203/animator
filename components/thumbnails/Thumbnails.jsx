@@ -10,7 +10,7 @@ const Thumbnails = () => {
   }, []);
   return (
     <div
-      className="container mx-auto px-4 md:px-20 text-white"
+      className="md:container mx-auto px-4 md:px-20 text-white"
       data-aos="fade-up"
       data-aos-duration="2000"
     >
