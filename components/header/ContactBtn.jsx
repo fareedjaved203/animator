@@ -46,7 +46,7 @@ const ContactBtn = () => {
       ) : (
         <div className="flex justify-center items-center flex-col w-full text-center animate-fade-in animation-delay-1000">
           <div
-            className="space-y-4 text-6xl text-white"
+            className="space-y-6 text-6xl text-white"
             style={{ fontWeight: "900" }}
           >
             My <span className="text-[#FFDC23]">Work</span>

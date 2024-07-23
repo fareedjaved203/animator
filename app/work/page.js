@@ -13,7 +13,7 @@ export default function WorkPage() {
       <div className="mt-16">
         <Header />
       </div>
-      <div id="work" className="mt-10">
+      <div id="work" className="mt-8">
         <Work />
       </div>
       <div className="mt-24 md:mt-32">
