@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       <header className="hidden md:block bg-black text-white font-inter bg-opacity-80 h-[82px]">
-        <div className="container mx-auto px-4 py-5 w-2/3 justify-center flex flex-nowrap flex-col md:flex-row items-center">
+        <div className="mx-auto py-5 w-2/3 justify-center flex flex-nowrap flex-col md:flex-row items-center">
           <Link href={"/"}>
             <div
               className="text-[#FFDC23] cursor-pointer"
