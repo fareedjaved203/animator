@@ -16,9 +16,9 @@ module.exports = {
 
       lg: "1280px",
 
-      xl: "1441px",
+      xl: "1400px",
 
-      "2xl": "1440px",
+      "2xl": "1400px",
     },
     fontFamily: {
       poppins: ["var(--font-poppins)"],

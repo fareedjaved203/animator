@@ -4,11 +4,11 @@ import work from "./work.json";
 const GridComponent = () => {
   return (
     <div className="flex justify-center items-center">
-      <div className="grid grid-cols-2 md:grid-cols-4 md:w-[1192px] place-items-center">
+      <div className="grid grid-cols-2 md:grid-cols-4 place-items-center gap-4">
         {work.map((item) => (
           <div
             key={item.id}
-            className="rounded-[12.73px] my-2 overflow-hidden cursor-pointer hover:scale-105 hover:transition-all hover:duration-300 duration-300"
+            className="rounded-[12.73px] overflow-hidden cursor-pointer hover:scale-105 hover:transition-all hover:duration-300 duration-300"
           >
             <div className="flex justify-center items-center">
               <Image
