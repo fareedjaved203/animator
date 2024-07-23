@@ -23,7 +23,7 @@ const Thumbnails = () => {
             Featured <div className="text-white">Thumbnails</div>
           </div>
           <div
-            className="col-span-2 text-[#CACACA] font-roboto md:pr-14"
+            className="col-span-2 text-[#CACACA] font-roboto xl:pr-0"
             style={{
               fontSize: "16px",
             }}
