@@ -1,5 +1,13 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
@@ -8,93 +16,34 @@ import "./reviews.css";
 import Stars from "./Stars";
 
 const Reviews = () => {
-  const [toggle, setToggle] = useState(false);
-  useEffect(() => {
-    AOS.init({});
-  }, []);
-
-  const scrollersRef = useRef([]);
-
-  useEffect(() => {
-    const scrollers = document.querySelectorAll(".scroller-reviews");
-    scrollersRef.current = Array.from(scrollers);
-
-    // If a user hasn't opted in for reduced motion, then we add the animation
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      addAnimation();
-    }
-
-    function addAnimation() {
-      scrollersRef.current.forEach((scroller) => {
-        // add data-animated="true" to every `.scroller` on the page
-        scroller.setAttribute("data-animated", true);
-
-        // Make an array from the elements within `.scroller-inner`
-        const scrollerInner = scroller.querySelector(
-          ".scroller__inner-reviews"
-        );
-        const scrollerContent = Array.from(scrollerInner.children);
-
-        // For each item in the array, clone it
-        // add aria-hidden to it
-        // add it into the `.scroller-inner`
-        scrollerContent.forEach((item) => {
-          const duplicatedItem = item.cloneNode(true);
-          duplicatedItem.setAttribute("aria-hidden", false);
-          scrollerInner.appendChild(duplicatedItem);
-        });
-      });
-    }
-  }, []);
-
+  const OPTIONS = { align: "center", dragFree: true, loop: true };
   return (
-    <div data-aos="fade-up" data-aos-duration="2000">
-      <div
-        className="flex justify-center items-center text-center w-full text-[#FFDC23] mb-20"
-        style={{ fontWeight: "900" }}
-      >
-        <div className="md:w-3/4 text-4xl md:text-4.5xl text-nowrap">
-          Client Reviews
-        </div>
-      </div>
-
-      <div
-        className="scroller-reviews text-white"
-        data-direction="right"
-        data-speed="slow"
-      >
-        <div className="scroller__inner-reviews p-2">
-          {clientReviews.map((review) => (
-            <div
-              key={review.id}
-              className={`flex flex-col space-y-3 overflow-auto w-80 space-x-4 mb-8 p-4 pl-0 bg-black rounded-xl h-56 border border-white cursor-pointer`}
-            >
-              <div className="p-2 px-3">
-                <Stars />
-              </div>
-              <div className="text-xs mt-2 italic">
-                &quot;{review.review}&quot;
-              </div>
-
-              <div className="flex justify-center items-center">
-                <div className="flex-1">
-                  <Image
-                    src={review.image}
-                    width={90}
-                    height={90}
-                    alt="me"
-                    className="rounded-full w-16 h-16 aspect-square object-cover"
-                  />
+    <Carousel className="w-full" options={OPTIONS}>
+      <CarouselContent className="-ml-2 py-2  w-full ">
+        {clientReviews.map((item) => (
+          <CarouselItem key={item.id} className=" md:basis-1/2">
+            <Card className=" w-full p-4 flex flex-col justify-center    hover:bg-white border max-w-[687px]  h-[440px] sm:h-full sm:max-h-[380px] md:max-h-[500px] lg:max-h-[363px] ">
+              <CardHeader className="flex  flex-row gap-4 ">
+                <Image src={item.image} alt="icon" width={120} height={116} />
+                <div className="flex-col space-y-1">
+                  <h2 className=" text-2xl lg:text-3xl font-mulish font-bold">
+                    {item.name}
+                  </h2>
                 </div>
-                <div className="flex-grow">
-                  <div className="text-md font-semibold">{review.name}</div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+              </CardHeader>
+              <CardContent className=" space-y-4 aspect-square x-6 ">
+                <p className="text-lg lg:text-xl font-normal font-mulish text-[##133240] p-0 m-0 ">
+                  {item.review}
+                  <br /> {item.role}
+                </p>
+              </CardContent>
+            </Card>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
   );
 };
 
