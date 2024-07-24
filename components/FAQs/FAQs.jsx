@@ -19,7 +19,7 @@ const FAQs = () => {
           >
             Frequently Asked Questions
           </div>
-          <div className="text-white text-md">
+          <div className="text-white text-sm md:text-base">
             Everything you need to know about the product and billing.
           </div>
         </div>

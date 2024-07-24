@@ -25,10 +25,7 @@ const Hobbies = () => {
               >
                 About Me
               </div>
-              <div
-                className="text-sm text-[#CACACA] font-roboto text-center md:px-[132px] lg.5:px-0  lg.5:text-start"
-                style={{ fontSize: "16px" }}
-              >
+              <div className="text-sm md:text-base text-[#CACACA] font-roboto text-center md:px-[132px] lg.5:px-0  lg.5:text-start">
                 We always provide the best for our clients in any case so that
                 all their wishes can be realized and have a decent, comfortable
                 and aesthetically pleasing place to live. Pleasing environment

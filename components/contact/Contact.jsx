@@ -19,9 +19,7 @@ const Contact = () => {
           >
             Get in touch today!
           </h2>
-          <div className="text-white" style={{ fontSize: "16px" }}>
-            Thank You!
-          </div>
+          <div className="text-white text-sm md:text-base">Thank You!</div>
         </div>
         <div className="flex justify-center items-center mt-10">
           <Form />
