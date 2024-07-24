@@ -36,13 +36,19 @@ const CarouselSlider = () => {
             </div>
           </div>
 
-          <CarouselContent className="flex-nowrap ml-3 md:ml-0">
+          {/* <CarouselItem
+                key={review.id}
+                className="bg-blue-200 basis-1/1 lg:basis-[24%] 2xl:basis-[21.5%] 2.5xl:basis-[18%] 2.2xl:basis-[20%] 3xl:basis-[16%] 4xl:basis-[12%] lg.5:basis-[30%] lg.6:basis-[27%] lg.75:basis-[26%] pl-6"
+              > */}
+          {/* className="flex-nowrap ml-3 md:-ml-1 bg-pink-500" */}
+          <CarouselContent className="-ml-2 py-2  w-full">
             {clientReviews.map((review) => (
               <CarouselItem
                 key={review.id}
-                className="basis-1/1 lg:basis-[24%] 2xl:basis-[21.5%] 2.5xl:basis-[18%] 2.2xl:basis-[20%] 3xl:basis-[16%] 4xl:basis-[12%] lg.5:basis-[30%] lg.6:basis-[27%] lg.75:basis-[26%]"
+                // className="bg-blue-200 basis-1/1 lg:basis-[24%] 2xl:basis-[21.5%] 2.5xl:basis-[18%] 2.2xl:basis-[20%] 3xl:basis-[16%] 4xl:basis-[12%] lg.5:basis-[30%] lg.6:basis-[27%] lg.75:basis-[26%] pl-6"
+                className="sm:basis-1/1 md:basis-1/2  lg:basis-1/2 xl:basis-[23%] max-w-[316px] max-h-[240px]"
               >
-                <div className="text-white flex flex-col space-y-3 overflow-auto space-x-4 mb-8 pl-0 bg-black rounded-xl h-[234px] w-[310px] py-2 border border-white cursor-pointer">
+                <div className="w-full text-white flex flex-col space-y-3 overflow-auto space-x-4 mb-8 pl-0 bg-black rounded-xl h-full py-2 border border-white cursor-pointer">
                   <div className="p-2 px-3">
                     <Stars />
                   </div>
