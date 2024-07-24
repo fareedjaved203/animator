@@ -10,20 +10,20 @@ const Thumbnails = () => {
   }, []);
   return (
     <div
-      className="md:container mx-auto px-4 md:px-20 text-white"
+      className="lg.5:container mx-auto px-4 md:px-20 text-white"
       data-aos="fade-up"
       data-aos-duration="2000"
     >
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 place-items-start md:grid-cols-3 md:w-[75%] md:space-x-16 space-y-4 md:space-y-0">
+        <div className="grid grid-cols-1 place-items-start lg.5:grid-cols-3 md:w-[75%] lg.5:space-x-16 space-y-4 lg.5:space-y-0">
           <div
-            className="w-full text-4xl text-center md:text-start md:text-[48px] leading-none text-[#FFDC23]"
+            className="w-full text-4xl text-center lg.5:text-start lg.5:text-[48px] leading-none text-[#FFDC23]"
             style={{ fontWeight: "900" }}
           >
             Featured <div className="text-white">Thumbnails</div>
           </div>
           <div
-            className="col-span-2 text-[#CACACA] font-roboto xl:pr-0 text-center md:text-start"
+            className="col-span-2 text-[#CACACA] font-roboto xl:pr-0 text-center lg.5:text-start"
             style={{
               fontSize: "16px",
             }}

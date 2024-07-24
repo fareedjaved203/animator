@@ -13,7 +13,7 @@ const Achievements = () => {
       data-aos-duration="2000"
       className="container mx-auto px-4 md:px-20 flex justify-center items-center"
     >
-      <div className="text-white flex justify-around md:justify-center items-center md:flex-row w-full md:w-1/2 md:space-y-0">
+      <div className="text-white flex justify-around md:justify-center items-center md:space-x-20 lg.5:space-x-0 md:flex-row w-full md:w-1/2 md:space-y-0">
         <div
           className="md:space-y-1 md:flex-1  flex justify-center items-center flex-col"
           style={{ fontSize: "16px" }}

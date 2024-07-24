@@ -15,7 +15,7 @@ const AccordionCard = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div
-        className="clash-display md:w-[768px] py-4 text-white"
+        className="clash-display sm:[600px] md:[760px] lg.5:w-[768px] py-4 text-white"
         style={{ lineHeight: "26px" }}
       >
         <div className="w-full space-y-6">

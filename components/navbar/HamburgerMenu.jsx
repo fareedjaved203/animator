@@ -14,7 +14,7 @@ const HamburgerMenu = () => {
     setActiveLink(link);
   };
   return (
-    <header className={`block md:hidden px-4 py-2 bg-black`}>
+    <header className={`block lg.5:hidden px-4 py-2 bg-black`}>
       <div className="flex flex-row justify-between items-center">
         <Link href={"/"}>
           <div
@@ -27,7 +27,7 @@ const HamburgerMenu = () => {
 
         <button
           onClick={toggleSidebar}
-          className="md:hidden text-[#FFDC23] hover:text-blue focus:outline-none focus:text-black"
+          className="lg.5:hidden text-[#FFDC23] hover:text-blue focus:outline-none focus:text-black"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ const HamburgerMenu = () => {
         </button>
         {isSidebarVisible && (
           <div
-            className={`fixed top-0 left-0 h-screen md:hidden 
+            className={`fixed top-0 left-0 h-screen lg.5:hidden 
       transition-transform duration-300 transform ${
         isSidebarVisible ? "translate-x-0" : "-translate-x-full"
       }`}
