@@ -23,7 +23,7 @@ const CarouselSlider = () => {
         >
           <div className="flex justify-center items-center">
             <div
-              className="flex space-y-4 md:space-y-0 flex-col md:flex-row justify-between items-center text-center md:w-[650px] lg.5w-[960px] text-[#FFDC23] mb-20"
+              className="flex space-y-4 md:space-y-0 flex-col md:flex-row justify-between items-center text-center md:w-[650px] lg.5w-[960px] text-[#FFDC23] mb-10 md:mb-16"
               style={{ fontWeight: "900" }}
             >
               <div className="text-4xl md:text-4.5xl text-nowrap">

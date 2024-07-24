@@ -14,7 +14,7 @@ const HamburgerMenu = () => {
     setActiveLink(link);
   };
   return (
-    <header className={`block lg.5:hidden px-4 py-2 bg-black`}>
+    <header className={`max-[900px]:block hidden px-4 py-2 bg-black`}>
       <div className="flex flex-row justify-between items-center">
         <Link href={"/"}>
           <div

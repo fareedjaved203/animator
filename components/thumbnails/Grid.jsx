@@ -4,7 +4,7 @@ import thumbnails from "./thumbnails.json";
 const GridComponent = () => {
   return (
     <div className="flex justify-center items-center w-full">
-      <div className="w-full grid grid-cols-2 md:grid-cols-3 md:w-[77%] gap-2 md:gap-4">
+      <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
         {thumbnails.map((item) => (
           <div
             key={item.id}
