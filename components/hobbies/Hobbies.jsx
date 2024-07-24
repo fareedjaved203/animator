@@ -18,13 +18,13 @@ const Hobbies = () => {
         <div className="col-span-2 w-full order-2 md:order-1">
           <div className="space-y-4 md:px-0 mt-4 md:mt-0 md:w-[90%]">
             <div
-              className="text-[#FFDC23] text-4xl md:text-4.5xl"
+              className="text-[#FFDC23] text-4xl md:text-4.5xl text-center md:text-start"
               style={{ fontWeight: "900" }}
             >
               About Me
             </div>
             <div
-              className="text-sm text-[#CACACA] font-roboto"
+              className="text-sm text-[#CACACA] font-roboto text-center md:text-start"
               style={{ fontSize: "16px" }}
             >
               We always provide the best for our clients in any case so that all

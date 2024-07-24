@@ -17,13 +17,13 @@ const Thumbnails = () => {
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-1 place-items-start md:grid-cols-3 md:w-[75%] md:space-x-16 space-y-4 md:space-y-0">
           <div
-            className="text-4xl md:text-[48px] leading-none text-[#FFDC23]"
+            className="w-full text-4xl text-center md:text-start md:text-[48px] leading-none text-[#FFDC23]"
             style={{ fontWeight: "900" }}
           >
             Featured <div className="text-white">Thumbnails</div>
           </div>
           <div
-            className="col-span-2 text-[#CACACA] font-roboto xl:pr-0"
+            className="col-span-2 text-[#CACACA] font-roboto xl:pr-0 text-center md:text-start"
             style={{
               fontSize: "16px",
             }}

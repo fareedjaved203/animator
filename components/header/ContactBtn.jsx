@@ -8,14 +8,19 @@ const ContactBtn = () => {
   return (
     <>
       {pathname == "/" ? (
-        <div className="h-[182px] w-full text-center animate-fade-in animation-delay-1000 space-y-4 mb-9">
-          <div className="flex space-x-3 text-[#FFDC23] justify-center items-center">
-            <Image src={"/tick.svg"} width={30} height={30} alt="tick" />
+        <div className="h-[182px] w-full text-center animate-fade-in animation-delay-1000 space-y-4 -mb-8 md:mb-9">
+          <div className="flex space-x-2 md:space-x-4 text-[#FFDC23] justify-center items-center text-sm md:text-xl">
+            <Image
+              src={"/tick.svg"}
+              width={30}
+              height={30}
+              alt="tick"
+              className="w-6 h-6 md:w-7 md:h-7 cover"
+            />
             <div
               className="font-lato"
               style={{
                 fontWeight: "700",
-                fontSize: "20px",
                 letterSpacing: "6%",
               }}
             >
