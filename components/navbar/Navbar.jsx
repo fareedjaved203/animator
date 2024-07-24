@@ -6,7 +6,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <>
-      <header className="container hidden min-[900px]:block text-white font-inter bg-opacity-80 h-[82px]">
+      <header className="container hidden min-[900px]:block bg-black text-white font-inter bg-opacity-80 h-[82px]">
         <div className="mx-auto py-5 w-full max-w-[1040px] justify-center flex flex-nowrap flex-col md:flex-row items-center">
           <Link href={"/"}>
             <div
