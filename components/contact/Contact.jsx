@@ -10,7 +10,7 @@ const Contact = () => {
     AOS.init({});
   }, []);
   return (
-    <ContentLayout className={"w-full max-w-[450px]"}>
+    <ContentLayout className={"w-full max-w-[520px]"}>
       <div data-aos="fade-up" data-aos-duration="2000" className="w-full">
         <div className="w-full space-y-5 text-center">
           <h2
