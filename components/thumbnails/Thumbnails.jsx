@@ -17,11 +17,8 @@ const Thumbnails = () => {
         data-aos-duration="2000"
       >
         <div className="flex justify-center items-center w-full">
-          <div className="grid grid-cols-1 place-items-center md:place-items-start lg.5:grid-cols-3 space-x-0 lg.5:space-x-16 space-y-4 lg.5:space-y-0 gap-x-16">
-            <h2
-              className="col-span-3 md:col-span-1 w-full text-4xl text-center lg.5:text-start lg.5:text-[48px] leading-none text-[#FFDC23]"
-              style={{ fontWeight: "900" }}
-            >
+          <div className="grid grid-cols-1 place-items-center lg.5:place-items-start lg.5:grid-cols-3 space-x-0 lg.5:space-x-16 space-y-4 lg.5:space-y-0 lg:gap-x-16">
+            <h2 className="col-span-3 font-black md:col-span-1 w-full text-4xl text-center lg.5:text-start lg.5:text-[48px] leading-none text-[#FFDC23]">
               Featured <span className="text-white">Thumbnails</span>
             </h2>
             <div className="col-span-3 md:col-span-2 text-[#CACACA] font-roboto xl:pr-0 lg.5:text-start text-sm md:text-base text-center md:text-justify">
