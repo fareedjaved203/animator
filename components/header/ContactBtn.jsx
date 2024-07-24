@@ -8,7 +8,7 @@ const ContactBtn = () => {
   return (
     <>
       {pathname == "/" ? (
-        <div className="h-[182px] w-full text-center animate-fade-in animation-delay-1000 space-y-4 -mb-8 md:mb-9">
+        <div className="h-[182px] w-full text-center animate-fade-in animation-delay-1000 space-y-4 -mb-9 md:mb-9">
           <div className="flex space-x-2 md:space-x-4 text-[#FFDC23] justify-center items-center text-sm md:text-xl">
             <Image
               src={"/tick.svg"}
